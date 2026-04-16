@@ -1,2 +1,2 @@
 # hytale-pathfinder
-Main repository for the Hytale Pathfinder grant project.
+Active Development, v0.1
