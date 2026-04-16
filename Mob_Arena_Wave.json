@@ -1,0 +1,171 @@
+{
+  "$Comment":"DO NOT CUSTOMIZE THIS FILE. For information on how to make customizations to the Mob Arena mod, see the ReadMe file.",
+  "Class": "Instruction",
+  "Type": "Component",
+  "Parameters": {
+    "Wave_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance NPCs will spawn away from the spawner during a wave."
+    },
+    "Wave_Start_Time": {
+      "Value": [
+        599,
+        600
+      ],
+      "Description": "Determines when the wave will start."
+    },
+    "Wave_Enemy_One_Type": {
+      "Value": "Gecko",
+      "Description": "Determines the enemy type for enemy type 1 of 5."
+    },
+    "Wave_Enemy_One_Count": {
+      "Value": [ 1, 1 ],
+      "Description": "Determines the minimum and maximum enemy count for enemy type 1 of 5."
+    },
+    "Wave_Enemy_Two_Type": {
+      "Value": "Gecko",
+      "Description": "Determines the enemy type for enemy type 2 of 5."
+    },
+    "Wave_Enemy_Two_Count": {
+      "Value": [ 1, 1 ],
+      "Description": "Determines the minimum and maximum enemy count for enemy type 2 of 5."
+    },
+    "Wave_Enemy_Three_Type": {
+      "Value": "Gecko",
+      "Description": "Determines the enemy type for enemy type 3 of 5."
+    },
+    "Wave_Enemy_Three_Count": {
+      "Value": [ 1, 1 ],
+      "Description": "Determines the minimum and maximum enemy count for enemy type 3 of 5."
+    },
+    "Wave_Enemy_Four_Type": {
+      "Value": "Gecko",
+      "Description": "Determines the enemy type for enemy type 4 of 5."
+    },
+    "Wave_Enemy_Four_Count": {
+      "Value": [ 1, 1 ],
+      "Description": "Determines the minimum and maximum enemy count for enemy type 4 of 5."
+    },
+    "Wave_Enemy_Five_Type": {
+      "Value": "Gecko",
+      "Description": "Determines the enemy type for enemy type 5 of 5."
+    },
+    "Wave_Enemy_Five_Count": {
+      "Value": [ 1, 1 ],
+      "Description": "Determines the minimum and maximum enemy count for enemy type 5 of 5."
+    }
+  },
+  "Content": {
+    "Sensor": {
+      "Type": "Timer",
+      "Name": "WaveTimer",
+      "Once": true,
+      "State": "RUNNING",
+      "TimeRemainingRange": {
+        "Compute": "Wave_Start_Time"
+      }
+    },
+    "Actions": [
+      {
+        "Type": "Spawn",
+        "SpawnAngle": 330,
+        "DistanceRange": {
+          "Compute": "Wave_Distance_Range"
+        },
+        "Kind": {
+          "Compute": "Wave_Enemy_One_Type"
+        },
+        "JoinFlock": true,
+        "FanOut": true,
+        "Once": true,
+        "CountRange": {
+          "Compute": "Wave_Enemy_One_Count"
+        },
+        "DelayRange": [
+          0,
+          0
+        ]
+      },
+      {
+        "Type": "Spawn",
+        "SpawnAngle": 330,
+        "DistanceRange": {
+          "Compute": "Wave_Distance_Range"
+        },
+        "Kind": {
+          "Compute": "Wave_Enemy_Two_Type"
+        },
+        "JoinFlock": true,
+        "FanOut": true,
+        "Once": true,
+        "CountRange": {
+          "Compute": "Wave_Enemy_Two_Count"
+        },
+        "DelayRange": [
+          0,
+          0
+        ]
+      },
+      {
+        "Type": "Spawn",
+        "SpawnAngle": 330,
+        "DistanceRange": {
+          "Compute": "Wave_Distance_Range"
+        },
+        "Kind": {
+          "Compute": "Wave_Enemy_Three_Type"
+        },
+        "JoinFlock": true,
+        "FanOut": true,
+        "Once": true,
+        "CountRange": {
+          "Compute": "Wave_Enemy_Three_Count"
+        },
+        "DelayRange": [
+          0,
+          0
+        ]
+      },
+      {
+        "Type": "Spawn",
+        "SpawnAngle": 330,
+        "DistanceRange": {
+          "Compute": "Wave_Distance_Range"
+        },
+        "Kind": {
+          "Compute": "Wave_Enemy_Four_Type"
+        },
+        "JoinFlock": true,
+        "FanOut": true,
+        "Once": true,
+        "CountRange": {
+          "Compute": "Wave_Enemy_Four_Count"
+        },
+        "DelayRange": [
+          0,
+          0
+        ]
+      },
+      {
+        "Type": "Spawn",
+        "SpawnAngle": 330,
+        "DistanceRange": {
+          "Compute": "Wave_Distance_Range"
+        },
+        "Kind": {
+          "Compute": "Wave_Enemy_Five_Type"
+        },
+        "JoinFlock": true,
+        "FanOut": true,
+        "Once": true,
+        "CountRange": {
+          "Compute": "Wave_Enemy_Five_Count"
+        },
+        "DelayRange": [
+          0,
+          0
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,467 @@
+{
+  "Type": "Abstract",
+  "Appearance": "Mannequin",
+  "KnockbackScale": 1,
+  "FlockAllowedNPC": [
+    "Test_Can_Join_Flock"
+  ],
+  "MotionControllerList": [
+    {
+      "Type": "Walk",
+      "MaxWalkSpeed": 3,
+      "Gravity": 10,
+      "MaxFallSpeed": 8,
+      "Acceleration": 10
+    }
+  ],
+  "MaxHealth": {
+    "Compute": "MaxHealth"
+  },
+  "Parameters": {
+    "MaxHealth": {
+      "Value": 5,
+      "Description": "Max health for the NPC"
+    },
+    "Mob_Arena_Distance_Range": {
+      "Value": [
+        12,
+        12
+      ],
+      "Description": "The distance from the spawner that enemies will spawn at."
+    },
+    "Wave_One_Start_Time": {
+      "Value": [
+        599,
+        600
+      ],
+      "Description": "Value for calculating the moment Wave 1 starts."
+    },
+    "Wave_One_Enemy_One_Type": {
+      "Value": "Scarak_Fighter"
+    },
+    "Wave_One_Enemy_One_Amount": {
+      "Value": [
+        2,
+        2
+      ]
+    },
+    "Wave_One_Enemy_Two_Type": {
+      "Value": "Scarak_Fighter"
+    },
+    "Wave_One_Enemy_Two_Amount": {
+      "Value": [
+        2,
+        2
+      ]
+    },
+    "Wave_One_Enemy_Three_Type": {
+      "Value": "Scarak_Fighter"
+    },
+    "Wave_One_Enemy_Three_Amount": {
+      "Value": [
+        2,
+        2
+      ]
+    },
+    "Wave_Two_Start_Time": {
+      "Value": [
+        539,
+        540
+      ],
+      "Description": "Lower value for calculating the moment Wave 1 starts."
+    },
+    "Wave_Two_Enemy_One_Type": {
+      "Value": "Scarak_Fighter"
+    },
+    "Wave_Two_Enemy_One_Amount": {
+      "Value": [
+        2,
+        2
+      ]
+    },
+    "Wave_Two_Enemy_Two_Type": {
+      "Value": "Scarak_Fighter"
+    },
+    "Wave_Two_Enemy_Two_Amount": {
+      "Value": [
+        2,
+        2
+      ]
+    },
+    "Wave_Two_Enemy_Three_Type": {
+      "Value": "Scarak_Fighter"
+    },
+    "Wave_Two_Enemy_Three_Amount": {
+      "Value": [
+        2,
+        2
+      ]
+    },
+    "Wave_Three_Start_Time": {
+      "Value": [
+        479,
+        480
+      ],
+      "Description": "Lower value for calculating the moment Wave 1 starts."
+    },
+    "Wave_Three_Enemy_One_Type": {
+      "Value": "Scarak_Fighter"
+    },
+    "Wave_Three_Enemy_One_Amount": {
+      "Value": [
+        2,
+        2
+      ]
+    },
+    "Wave_Three_Enemy_Two_Type": {
+      "Value": "Scarak_Fighter"
+    },
+    "Wave_Three_Enemy_Two_Amount": {
+      "Value": [
+        2,
+        2
+      ]
+    },
+    "Wave_Three_Enemy_Three_Type": {
+      "Value": "Scarak_Fighter"
+    },
+    "Wave_Three_Enemy_Three_Amount": {
+      "Value": [
+        2,
+        2
+      ]
+    },
+    "Wave_Four_Start_Time": {
+      "Value": [
+        419,
+        420
+      ],
+      "Description": "Lower value for calculating the moment Wave 1 starts."
+    },
+    "Wave_Four_Enemy_One_Type": {
+      "Value": "Scarak_Fighter"
+    },
+    "Wave_Four_Enemy_One_Amount": {
+      "Value": [
+        2,
+        2
+      ]
+    },
+    "Wave_Four_Enemy_Two_Type": {
+      "Value": "Scarak_Fighter"
+    },
+    "Wave_Four_Enemy_Two_Amount": {
+      "Value": [
+        2,
+        2
+      ]
+    },
+    "Wave_Four_Enemy_Three_Type": {
+      "Value": "Scarak_Fighter"
+    },
+    "Wave_Four_Enemy_Three_Amount": {
+      "Value": [
+        2,
+        2
+      ]
+    },
+    "Wave_Five_Start_Time": {
+      "Value": [
+        359,
+        360
+      ],
+      "Description": "Lower value for calculating the moment Wave 1 starts."
+    },
+    "Wave_Five_Enemy_One_Type": {
+      "Value": "Scarak_Fighter"
+    },
+    "Wave_Five_Enemy_One_Amount": {
+      "Value": [
+        2,
+        2
+      ]
+    },
+    "Wave_Five_Enemy_Two_Type": {
+      "Value": "Scarak_Fighter"
+    },
+    "Wave_Five_Enemy_Two_Amount": {
+      "Value": [
+        2,
+        2
+      ]
+    },
+    "Wave_Five_Enemy_Three_Type": {
+      "Value": "Scarak_Fighter"
+    },
+    "Wave_Five_Enemy_Three_Amount": {
+      "Value": [
+        2,
+        2
+      ]
+    },
+    "Wave_Six_Start_Time": {
+      "Value": [
+        299,
+        300
+      ],
+      "Description": "Lower value for calculating the moment Wave 1 starts."
+    },
+    "Wave_Six_Enemy_One_Type": {
+      "Value": "Scarak_Fighter"
+    },
+    "Wave_Six_Enemy_One_Amount": {
+      "Value": [
+        2,
+        2
+      ]
+    },
+    "Wave_Six_Enemy_Two_Type": {
+      "Value": "Scarak_Fighter"
+    },
+    "Wave_Six_Enemy_Two_Amount": {
+      "Value": [
+        2,
+        2
+      ]
+    },
+    "Wave_Six_Enemy_Three_Type": {
+      "Value": "Scarak_Fighter"
+    },
+    "Wave_Six_Enemy_Three_Amount": {
+      "Value": [
+        2,
+        2
+      ]
+    },
+    "Wave_Seven_Start_Time": {
+      "Value": [
+        239,
+        240
+      ],
+      "Description": "Lower value for calculating the moment Wave 1 starts."
+    },
+    "Wave_Seven_Enemy_One_Type": {
+      "Value": "Scarak_Fighter"
+    },
+    "Wave_Seven_Enemy_One_Amount": {
+      "Value": [
+        2,
+        2
+      ]
+    },
+    "Wave_Seven_Enemy_Two_Type": {
+      "Value": "Scarak_Fighter"
+    },
+    "Wave_Seven_Enemy_Two_Amount": {
+      "Value": [
+        2,
+        2
+      ]
+    },
+    "Wave_Seven_Enemy_Three_Type": {
+      "Value": "Scarak_Fighter"
+    },
+    "Wave_Seven_Enemy_Three_Amount": {
+      "Value": [
+        2,
+        2
+      ]
+    },
+    "Wave_Eight_Start_Time": {
+      "Value": [
+        179,
+        180
+      ],
+      "Description": "Lower value for calculating the moment Wave 1 starts."
+    },
+    "Wave_Eight_Enemy_One_Type": {
+      "Value": "Scarak_Fighter"
+    },
+    "Wave_Eight_Enemy_One_Amount": {
+      "Value": [
+        2,
+        2
+      ]
+    },
+    "Wave_Eight_Enemy_Two_Type": {
+      "Value": "Scarak_Fighter"
+    },
+    "Wave_Eight_Enemy_Two_Amount": {
+      "Value": [
+        2,
+        2
+      ]
+    },
+    "Wave_Eight_Enemy_Three_Type": {
+      "Value": "Scarak_Fighter"
+    },
+    "Wave_Eight_Enemy_Three_Amount": {
+      "Value": [
+        2,
+        2
+      ]
+    },
+    "Wave_Nine_Start_Time": {
+      "Value": [
+        119,
+        120
+      ],
+      "Description": "Lower value for calculating the moment Wave 1 starts."
+    },
+    "Wave_Nine_Enemy_One_Type": {
+      "Value": "Scarak_Fighter"
+    },
+    "Wave_Nine_Enemy_One_Amount": {
+      "Value": [
+        2,
+        2
+      ]
+    },
+    "Wave_Nine_Enemy_Two_Type": {
+      "Value": "Scarak_Fighter"
+    },
+    "Wave_Nine_Enemy_Two_Amount": {
+      "Value": [
+        2,
+        2
+      ]
+    },
+    "Wave_Nine_Enemy_Three_Type": {
+      "Value": "Scarak_Fighter"
+    },
+    "Wave_Nine_Enemy_Three_Amount": {
+      "Value": [
+        2,
+        2
+      ]
+    },
+    "Wave_Ten_Start_Time": {
+      "Value": [
+        59,
+        60
+      ],
+      "Description": "Lower value for calculating the moment Wave 1 starts."
+    },
+    "Wave_Ten_Enemy_One_Type": {
+      "Value": "Scarak_Fighter"
+    },
+    "Wave_Ten_Enemy_One_Amount": {
+      "Value": [
+        2,
+        2
+      ]
+    },
+    "Wave_Ten_Enemy_Two_Type": {
+      "Value": "Scarak_Fighter"
+    },
+    "Wave_Ten_Enemy_Two_Amount": {
+      "Value": [
+        2,
+        2
+      ]
+    },
+    "Wave_Ten_Enemy_Three_Type": {
+      "Value": "Scarak_Fighter"
+    },
+    "Wave_Ten_Enemy_Three_Amount": {
+      "Value": [
+        2,
+        2
+      ]
+    }
+  },
+  "$Comment": "This is another test.",
+  "StartState": "Idle",
+  "Instructions": [
+    {
+      "Sensor": {
+        "Type": "Any",
+      },
+      "Instructions": [
+        {
+          "Continue": true,
+          "Sensor": {
+            "Type": "Any",
+            "Once": true
+          },
+          "Actions": [
+            {
+              "Type": "TimerStart",
+              "Name": "WaveTimer",
+              "StartValueRange": [
+                600,
+                600
+              ],
+              "RestartValueRange": [
+                600,
+                600
+              ],
+              "Repeating": false
+            }
+          ]
+        },
+        {
+          "Reference": "Mob_Arena_Wave",
+          "Modify": {
+            "Wave_Start_Time": {"Compute": "Wave_One_Start_Time"}
+          }
+        },
+        {
+          "Reference": "Mob_Arena_Wave",
+          "Modify": {
+            "Wave_Start_Time": {"Compute": "Wave_Two_Start_Time"}
+          }
+        },
+        {
+          "Reference": "Mob_Arena_Wave",
+          "Modify": {
+            "Wave_Start_Time": {"Compute": "Wave_Three_Start_Time"}
+          }
+        },
+        {
+          "Reference": "Mob_Arena_Wave",
+          "Modify": {
+            "Wave_Start_Time": {"Compute": "Wave_Four_Start_Time"}
+          }
+        },
+        {
+          "Reference": "Mob_Arena_Wave",
+          "Modify": {
+            "Wave_Start_Time": {"Compute": "Wave_Five_Start_Time"}
+          }
+        },
+        {
+          "Reference": "Mob_Arena_Wave",
+          "Modify": {
+            "Wave_Start_Time": {"Compute": "Wave_Six_Start_Time"}
+          }
+        },
+        {
+          "Reference": "Mob_Arena_Wave",
+          "Modify": {
+            "Wave_Start_Time": {"Compute": "Wave_Seven_Start_Time"}
+          }
+        },
+        {
+          "Reference": "Mob_Arena_Wave",
+          "Modify": {
+            "Wave_Start_Time": {"Compute": "Wave_Eight_Start_Time"}
+          }
+        },
+        {
+          "Reference": "Mob_Arena_Wave",
+          "Modify": {
+            "Wave_Start_Time": {"Compute": "Wave_Nine_Start_Time"}
+          }
+        },
+        {
+          "Reference": "Mob_Arena_Wave",
+          "Modify": {
+            "Wave_Start_Time": {"Compute": "Wave_Ten_Start_Time"}
+          }
+        }
+      ]
+    }
+  ],
+  "NameTranslationKey": "server.npcRoles.Test_Dummy.name"
+}
