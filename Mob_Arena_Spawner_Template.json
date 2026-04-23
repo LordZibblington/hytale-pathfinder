@@ -14,20 +14,16 @@
       "Acceleration": 10
     }
   ],
-  "MaxHealth": {
-    "Compute": "MaxHealth"
-  },
+  "MaxHealth": 5,
+  "StartState": "Idle",
   "Parameters": {
-    "MaxHealth": {
-      "Value": 5,
-      "Description": "Max health for the NPC"
+    "Mob_Arena_Player_Sensor_Range": {
+      "Value": 20,
+      "Description": "The distance checked by the spawner to see if a player is nearby."
     },
-    "Mob_Arena_Distance_Range": {
-      "Value": [
-        12,
-        12
-      ],
-      "Description": "The distance from the spawner that enemies will spawn at."
+    "Mob_Arena_Timer_Start_Range": {
+      "Value": [ 600 , 600 ],
+      "Description": "Range of possible values the timer can start at."
     },
     "Wave_One_Start_Time": {
       "Value": [
@@ -37,31 +33,139 @@
       "Description": "Value for calculating the moment Wave 1 starts."
     },
     "Wave_One_Enemy_One_Type": {
-      "Value": "Scarak_Fighter"
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy One in Wave One"
     },
-    "Wave_One_Enemy_One_Amount": {
+    "Wave_One_Enemy_One_Count": {
       "Value": [
         2,
         2
-      ]
+      ],
+      "Description": "The quantity of Enemy One in Wave One"
+    },
+    "Wave_One_Enemy_One_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy One of Wave One out equally across the spawn angle cone."
+    },
+    "Wave_One_Enemy_One_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy One of Wave One."
+    },
+    "Wave_One_Enemy_One_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy One of Wave One relative to the front of the spawner."
+    },
+    "Wave_One_Enemy_One_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy One of Wave One."
     },
     "Wave_One_Enemy_Two_Type": {
-      "Value": "Scarak_Fighter"
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy One in Wave Two"
     },
-    "Wave_One_Enemy_Two_Amount": {
+    "Wave_One_Enemy_Two_Count": {
       "Value": [
         2,
         2
-      ]
+      ],
+      "Description": "The quantity of Enemy One in Wave Two"
+    },
+    "Wave_One_Enemy_Two_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Two of Wave One out equally across the spawn angle cone."
+    },
+    "Wave_One_Enemy_Two_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Two of Wave One."
+    },
+    "Wave_One_Enemy_Two_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Two of Wave One relative to the front of the spawner."
+    },
+    "Wave_One_Enemy_Two_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Two of Wave One."
     },
     "Wave_One_Enemy_Three_Type": {
-      "Value": "Scarak_Fighter"
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy One in Wave Three"
     },
-    "Wave_One_Enemy_Three_Amount": {
+    "Wave_One_Enemy_Three_Count": {
       "Value": [
         2,
         2
-      ]
+      ],
+      "Description": "The quantity of Enemy One in Wave Three"
+    },
+    "Wave_One_Enemy_Three_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Three of Wave One out equally across the spawn angle cone."
+    },
+    "Wave_One_Enemy_Three_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Three of Wave One."
+    },
+    "Wave_One_Enemy_Three_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Three of Wave One relative to the front of the spawner."
+    },
+    "Wave_One_Enemy_Three_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Three of Wave One."
+    },
+    "Wave_One_Enemy_Four_Type": {
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy One in Wave Four"
+    },
+    "Wave_One_Enemy_Four_Count": {
+      "Value": [
+        2,
+        2
+      ],
+      "Description": "The quantity of Enemy One in Wave Four"
+    },
+    "Wave_One_Enemy_Four_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Four of Wave One out equally across the spawn angle cone."
+    },
+    "Wave_One_Enemy_Four_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Four of Wave One."
+    },
+    "Wave_One_Enemy_Four_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Four of Wave One relative to the front of the spawner."
+    },
+    "Wave_One_Enemy_Four_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Four of Wave One."
+    },
+    "Wave_One_Enemy_Five_Type": {
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy One in Wave Five"
+    },
+    "Wave_One_Enemy_Five_Count": {
+      "Value": [
+        2,
+        2
+      ],
+      "Description": "The quantity of Enemy One in Wave Five"
+    },
+    "Wave_One_Enemy_Five_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Five of Wave One out equally across the spawn angle cone."
+    },
+    "Wave_One_Enemy_Five_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Five of Wave One."
+    },
+    "Wave_One_Enemy_Five_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Five of Wave One relative to the front of the spawner."
+    },
+    "Wave_One_Enemy_Five_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Five of Wave One."
     },
     "Wave_Two_Start_Time": {
       "Value": [
@@ -71,31 +175,139 @@
       "Description": "Lower value for calculating the moment Wave 1 starts."
     },
     "Wave_Two_Enemy_One_Type": {
-      "Value": "Scarak_Fighter"
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Two in Wave One"
     },
-    "Wave_Two_Enemy_One_Amount": {
+    "Wave_Two_Enemy_One_Count": {
       "Value": [
         2,
         2
-      ]
+      ],
+      "Description": "The quantity of Enemy Two in Wave One"
+    },
+    "Wave_Two_Enemy_One_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy One of Wave Two out equally across the spawn angle cone."
+    },
+    "Wave_Two_Enemy_One_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy One of Wave Two."
+    },
+    "Wave_Two_Enemy_One_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy One of Wave Two relative to the front of the spawner."
+    },
+    "Wave_Two_Enemy_One_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy One of Wave Two."
     },
     "Wave_Two_Enemy_Two_Type": {
-      "Value": "Scarak_Fighter"
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Two in Wave Two"
     },
-    "Wave_Two_Enemy_Two_Amount": {
+    "Wave_Two_Enemy_Two_Count": {
       "Value": [
         2,
         2
-      ]
+      ],
+      "Description": "The quantity of Enemy Two in Wave Two"
+    },
+    "Wave_Two_Enemy_Two_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Two of Wave Two out equally across the spawn angle cone."
+    },
+    "Wave_Two_Enemy_Two_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Two of Wave Two."
+    },
+    "Wave_Two_Enemy_Two_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Two of Wave Two relative to the front of the spawner."
+    },
+    "Wave_Two_Enemy_Two_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Two of Wave Two."
     },
     "Wave_Two_Enemy_Three_Type": {
-      "Value": "Scarak_Fighter"
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Two in Wave Three"
     },
-    "Wave_Two_Enemy_Three_Amount": {
+    "Wave_Two_Enemy_Three_Count": {
       "Value": [
         2,
         2
-      ]
+      ],
+      "Description": "The quantity of Enemy Two in Wave Three"
+    },
+    "Wave_Two_Enemy_Three_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Three of Wave Two out equally across the spawn angle cone."
+    },
+    "Wave_Two_Enemy_Three_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Three of Wave Two."
+    },
+    "Wave_Two_Enemy_Three_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Three of Wave Two relative to the front of the spawner."
+    },
+    "Wave_Two_Enemy_Three_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Three of Wave Two."
+    },
+    "Wave_Two_Enemy_Four_Type": {
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Two in Wave Four"
+    },
+    "Wave_Two_Enemy_Four_Count": {
+      "Value": [
+        2,
+        2
+      ],
+      "Description": "The quantity of Enemy Two in Wave Four"
+    },
+    "Wave_Two_Enemy_Four_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Four of Wave Two out equally across the spawn angle cone."
+    },
+    "Wave_Two_Enemy_Four_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Four of Wave Two."
+    },
+    "Wave_Two_Enemy_Four_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Four of Wave Two relative to the front of the spawner."
+    },
+    "Wave_Two_Enemy_Four_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Four of Wave Two."
+    },
+    "Wave_Two_Enemy_Five_Type": {
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Two in Wave Five"
+    },
+    "Wave_Two_Enemy_Five_Count": {
+      "Value": [
+        2,
+        2
+      ],
+      "Description": "The quantity of Enemy Two in Wave Five"
+    },
+    "Wave_Two_Enemy_Five_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Five of Wave Two out equally across the spawn angle cone."
+    },
+    "Wave_Two_Enemy_Five_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Five of Wave Two."
+    },
+    "Wave_Two_Enemy_Five_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Five of Wave Two relative to the front of the spawner."
+    },
+    "Wave_Two_Enemy_Five_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Five of Wave Two."
     },
     "Wave_Three_Start_Time": {
       "Value": [
@@ -105,31 +317,139 @@
       "Description": "Lower value for calculating the moment Wave 1 starts."
     },
     "Wave_Three_Enemy_One_Type": {
-      "Value": "Scarak_Fighter"
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Three in Wave One"
     },
-    "Wave_Three_Enemy_One_Amount": {
+    "Wave_Three_Enemy_One_Count": {
       "Value": [
         2,
         2
-      ]
+      ],
+      "Description": "The quantity of Enemy Three in Wave One"
+    },
+    "Wave_Three_Enemy_One_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy One of Wave Three out equally across the spawn angle cone."
+    },
+    "Wave_Three_Enemy_One_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy One of Wave Three."
+    },
+    "Wave_Three_Enemy_One_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy One of Wave Three relative to the front of the spawner."
+    },
+    "Wave_Three_Enemy_One_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy One of Wave Three."
     },
     "Wave_Three_Enemy_Two_Type": {
-      "Value": "Scarak_Fighter"
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Three in Wave Two"
     },
-    "Wave_Three_Enemy_Two_Amount": {
+    "Wave_Three_Enemy_Two_Count": {
       "Value": [
         2,
         2
-      ]
+      ],
+      "Description": "The quantity of Enemy Three in Wave Two"
+    },
+    "Wave_Three_Enemy_Two_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Two of Wave Three out equally across the spawn angle cone."
+    },
+    "Wave_Three_Enemy_Two_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Two of Wave Three."
+    },
+    "Wave_Three_Enemy_Two_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Two of Wave Three relative to the front of the spawner."
+    },
+    "Wave_Three_Enemy_Two_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Two of Wave Three."
     },
     "Wave_Three_Enemy_Three_Type": {
-      "Value": "Scarak_Fighter"
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Three in Wave Three"
     },
-    "Wave_Three_Enemy_Three_Amount": {
+    "Wave_Three_Enemy_Three_Count": {
       "Value": [
         2,
         2
-      ]
+      ],
+      "Description": "The quantity of Enemy Three in Wave Three"
+    },
+    "Wave_Three_Enemy_Three_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Three of Wave Three out equally across the spawn angle cone."
+    },
+    "Wave_Three_Enemy_Three_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Three of Wave Three."
+    },
+    "Wave_Three_Enemy_Three_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Three of Wave Three relative to the front of the spawner."
+    },
+    "Wave_Three_Enemy_Three_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Three of Wave Three."
+    },
+    "Wave_Three_Enemy_Four_Type": {
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Three in Wave Four"
+    },
+    "Wave_Three_Enemy_Four_Count": {
+      "Value": [
+        2,
+        2
+      ],
+      "Description": "The quantity of Enemy Three in Wave Four"
+    },
+    "Wave_Three_Enemy_Four_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Four of Wave Three out equally across the spawn angle cone."
+    },
+    "Wave_Three_Enemy_Four_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Four of Wave Three."
+    },
+    "Wave_Three_Enemy_Four_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Four of Wave Three relative to the front of the spawner."
+    },
+    "Wave_Three_Enemy_Four_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Four of Wave Three."
+    },
+    "Wave_Three_Enemy_Five_Type": {
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Three in Wave Five"
+    },
+    "Wave_Three_Enemy_Five_Count": {
+      "Value": [
+        2,
+        2
+      ],
+      "Description": "The quantity of Enemy Three in Wave Five"
+    },
+    "Wave_Three_Enemy_Five_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Five of Wave Three out equally across the spawn angle cone."
+    },
+    "Wave_Three_Enemy_Five_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Five of Wave Three."
+    },
+    "Wave_Three_Enemy_Five_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Five of Wave Three relative to the front of the spawner."
+    },
+    "Wave_Three_Enemy_Five_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Five of Wave Three."
     },
     "Wave_Four_Start_Time": {
       "Value": [
@@ -139,31 +459,139 @@
       "Description": "Lower value for calculating the moment Wave 1 starts."
     },
     "Wave_Four_Enemy_One_Type": {
-      "Value": "Scarak_Fighter"
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Four in Wave One"
     },
-    "Wave_Four_Enemy_One_Amount": {
+    "Wave_Four_Enemy_One_Count": {
       "Value": [
         2,
         2
-      ]
+      ],
+      "Description": "The quantity of Enemy Four in Wave One"
+    },
+    "Wave_Four_Enemy_One_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy One of Wave Four out equally across the spawn angle cone."
+    },
+    "Wave_Four_Enemy_One_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy One of Wave Four."
+    },
+    "Wave_Four_Enemy_One_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy One of Wave Four relative to the front of the spawner."
+    },
+    "Wave_Four_Enemy_One_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy One of Wave Four."
     },
     "Wave_Four_Enemy_Two_Type": {
-      "Value": "Scarak_Fighter"
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Four in Wave Two"
     },
-    "Wave_Four_Enemy_Two_Amount": {
+    "Wave_Four_Enemy_Two_Count": {
       "Value": [
         2,
         2
-      ]
+      ],
+      "Description": "The quantity of Enemy Four in Wave Two"
+    },
+    "Wave_Four_Enemy_Two_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Two of Wave Four out equally across the spawn angle cone."
+    },
+    "Wave_Four_Enemy_Two_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Two of Wave Four."
+    },
+    "Wave_Four_Enemy_Two_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Two of Wave Four relative to the front of the spawner."
+    },
+    "Wave_Four_Enemy_Two_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Two of Wave Four."
     },
     "Wave_Four_Enemy_Three_Type": {
-      "Value": "Scarak_Fighter"
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Four in Wave Three"
     },
-    "Wave_Four_Enemy_Three_Amount": {
+    "Wave_Four_Enemy_Three_Count": {
       "Value": [
         2,
         2
-      ]
+      ],
+      "Description": "The quantity of Enemy Four in Wave Three"
+    },
+    "Wave_Four_Enemy_Three_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Three of Wave Four out equally across the spawn angle cone."
+    },
+    "Wave_Four_Enemy_Three_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Three of Wave Four."
+    },
+    "Wave_Four_Enemy_Three_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Three of Wave Four relative to the front of the spawner."
+    },
+    "Wave_Four_Enemy_Three_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Three of Wave Four."
+    },
+    "Wave_Four_Enemy_Four_Type": {
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Four in Wave Four"
+    },
+    "Wave_Four_Enemy_Four_Count": {
+      "Value": [
+        2,
+        2
+      ],
+      "Description": "The quantity of Enemy Four in Wave Four"
+    },
+    "Wave_Four_Enemy_Four_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Four of Wave Four out equally across the spawn angle cone."
+    },
+    "Wave_Four_Enemy_Four_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Four of Wave Four."
+    },
+    "Wave_Four_Enemy_Four_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Four of Wave Four relative to the front of the spawner."
+    },
+    "Wave_Four_Enemy_Four_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Four of Wave Four."
+    },
+    "Wave_Four_Enemy_Five_Type": {
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Four in Wave Five"
+    },
+    "Wave_Four_Enemy_Five_Count": {
+      "Value": [
+        2,
+        2
+      ],
+      "Description": "The quantity of Enemy Four in Wave Five"
+    },
+    "Wave_Four_Enemy_Five_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Five of Wave Four out equally across the spawn angle cone."
+    },
+    "Wave_Four_Enemy_Five_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Five of Wave Four."
+    },
+    "Wave_Four_Enemy_Five_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Five of Wave Four relative to the front of the spawner."
+    },
+    "Wave_Four_Enemy_Five_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Five of Wave Four."
     },
     "Wave_Five_Start_Time": {
       "Value": [
@@ -173,31 +601,139 @@
       "Description": "Lower value for calculating the moment Wave 1 starts."
     },
     "Wave_Five_Enemy_One_Type": {
-      "Value": "Scarak_Fighter"
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Five in Wave One"
     },
-    "Wave_Five_Enemy_One_Amount": {
+    "Wave_Five_Enemy_One_Count": {
       "Value": [
         2,
         2
-      ]
+      ],
+      "Description": "The quantity of Enemy Five in Wave One"
+    },
+    "Wave_Five_Enemy_One_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy One of Wave Five out equally across the spawn angle cone."
+    },
+    "Wave_Five_Enemy_One_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy One of Wave Five."
+    },
+    "Wave_Five_Enemy_One_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy One of Wave Five relative to the front of the spawner."
+    },
+    "Wave_Five_Enemy_One_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy One of Wave Five."
     },
     "Wave_Five_Enemy_Two_Type": {
-      "Value": "Scarak_Fighter"
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Five in Wave Two"
     },
-    "Wave_Five_Enemy_Two_Amount": {
+    "Wave_Five_Enemy_Two_Count": {
       "Value": [
         2,
         2
-      ]
+      ],
+      "Description": "The quantity of Enemy Five in Wave Two"
+    },
+    "Wave_Five_Enemy_Two_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Two of Wave Five out equally across the spawn angle cone."
+    },
+    "Wave_Five_Enemy_Two_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Two of Wave Five."
+    },
+    "Wave_Five_Enemy_Two_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Two of Wave Five relative to the front of the spawner."
+    },
+    "Wave_Five_Enemy_Two_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Two of Wave Five."
     },
     "Wave_Five_Enemy_Three_Type": {
-      "Value": "Scarak_Fighter"
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Five in Wave Three"
     },
-    "Wave_Five_Enemy_Three_Amount": {
+    "Wave_Five_Enemy_Three_Count": {
       "Value": [
         2,
         2
-      ]
+      ],
+      "Description": "The quantity of Enemy Five in Wave Three"
+    },
+    "Wave_Five_Enemy_Three_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Three of Wave Five out equally across the spawn angle cone."
+    },
+    "Wave_Five_Enemy_Three_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Three of Wave Five."
+    },
+    "Wave_Five_Enemy_Three_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Three of Wave Five relative to the front of the spawner."
+    },
+    "Wave_Five_Enemy_Three_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Three of Wave Five."
+    },
+    "Wave_Five_Enemy_Four_Type": {
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Five in Wave Four"
+    },
+    "Wave_Five_Enemy_Four_Count": {
+      "Value": [
+        2,
+        2
+      ],
+      "Description": "The quantity of Enemy Five in Wave Four"
+    },
+    "Wave_Five_Enemy_Four_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Four of Wave Five out equally across the spawn angle cone."
+    },
+    "Wave_Five_Enemy_Four_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Four of Wave Five."
+    },
+    "Wave_Five_Enemy_Four_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Four of Wave Five relative to the front of the spawner."
+    },
+    "Wave_Five_Enemy_Four_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Four of Wave Five."
+    },
+    "Wave_Five_Enemy_Five_Type": {
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Five in Wave Five"
+    },
+    "Wave_Five_Enemy_Five_Count": {
+      "Value": [
+        2,
+        2
+      ],
+      "Description": "The quantity of Enemy Five in Wave Five"
+    },
+    "Wave_Five_Enemy_Five_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Five of Wave Five out equally across the spawn angle cone."
+    },
+    "Wave_Five_Enemy_Five_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Five of Wave Five."
+    },
+    "Wave_Five_Enemy_Five_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Five of Wave Five relative to the front of the spawner."
+    },
+    "Wave_Five_Enemy_Five_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Five of Wave Five."
     },
     "Wave_Six_Start_Time": {
       "Value": [
@@ -207,31 +743,139 @@
       "Description": "Lower value for calculating the moment Wave 1 starts."
     },
     "Wave_Six_Enemy_One_Type": {
-      "Value": "Scarak_Fighter"
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Six in Wave One"
     },
-    "Wave_Six_Enemy_One_Amount": {
+    "Wave_Six_Enemy_One_Count": {
       "Value": [
         2,
         2
-      ]
+      ],
+      "Description": "The quantity of Enemy Six in Wave One"
+    },
+    "Wave_Six_Enemy_One_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy One of Wave Six out equally across the spawn angle cone."
+    },
+    "Wave_Six_Enemy_One_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy One of Wave Six."
+    },
+    "Wave_Six_Enemy_One_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy One of Wave Six relative to the front of the spawner."
+    },
+    "Wave_Six_Enemy_One_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy One of Wave Six."
     },
     "Wave_Six_Enemy_Two_Type": {
-      "Value": "Scarak_Fighter"
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Six in Wave Two"
     },
-    "Wave_Six_Enemy_Two_Amount": {
+    "Wave_Six_Enemy_Two_Count": {
       "Value": [
         2,
         2
-      ]
+      ],
+      "Description": "The quantity of Enemy Six in Wave Two"
+    },
+    "Wave_Six_Enemy_Two_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Two of Wave Six out equally across the spawn angle cone."
+    },
+    "Wave_Six_Enemy_Two_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Two of Wave Six."
+    },
+    "Wave_Six_Enemy_Two_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Two of Wave Six relative to the front of the spawner."
+    },
+    "Wave_Six_Enemy_Two_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Two of Wave Six."
     },
     "Wave_Six_Enemy_Three_Type": {
-      "Value": "Scarak_Fighter"
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Six in Wave Three"
     },
-    "Wave_Six_Enemy_Three_Amount": {
+    "Wave_Six_Enemy_Three_Count": {
       "Value": [
         2,
         2
-      ]
+      ],
+      "Description": "The quantity of Enemy Six in Wave Three"
+    },
+    "Wave_Six_Enemy_Three_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Three of Wave Six out equally across the spawn angle cone."
+    },
+    "Wave_Six_Enemy_Three_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Three of Wave Six."
+    },
+    "Wave_Six_Enemy_Three_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Three of Wave Six relative to the front of the spawner."
+    },
+    "Wave_Six_Enemy_Three_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Three of Wave Six."
+    },
+    "Wave_Six_Enemy_Four_Type": {
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Six in Wave Four"
+    },
+    "Wave_Six_Enemy_Four_Count": {
+      "Value": [
+        2,
+        2
+      ],
+      "Description": "The quantity of Enemy Six in Wave Four"
+    },
+    "Wave_Six_Enemy_Four_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Four of Wave Six out equally across the spawn angle cone."
+    },
+    "Wave_Six_Enemy_Four_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Four of Wave Six."
+    },
+    "Wave_Six_Enemy_Four_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Four of Wave Six relative to the front of the spawner."
+    },
+    "Wave_Six_Enemy_Four_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Four of Wave Six."
+    },
+    "Wave_Six_Enemy_Five_Type": {
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Six in Wave Five"
+    },
+    "Wave_Six_Enemy_Five_Count": {
+      "Value": [
+        2,
+        2
+      ],
+      "Description": "The quantity of Enemy Six in Wave Five"
+    },
+    "Wave_Six_Enemy_Five_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy One of Wave Six out equally across the spawn angle cone."
+    },
+    "Wave_Six_Enemy_Five_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy One of Wave Six."
+    },
+    "Wave_Six_Enemy_Five_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy One of Wave Six relative to the front of the spawner."
+    },
+    "Wave_Six_Enemy_Five_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy One of Wave Six."
     },
     "Wave_Seven_Start_Time": {
       "Value": [
@@ -241,31 +885,139 @@
       "Description": "Lower value for calculating the moment Wave 1 starts."
     },
     "Wave_Seven_Enemy_One_Type": {
-      "Value": "Scarak_Fighter"
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Seven in Wave One"
     },
-    "Wave_Seven_Enemy_One_Amount": {
+    "Wave_Seven_Enemy_One_Count": {
       "Value": [
         2,
         2
-      ]
+      ],
+      "Description": "The quantity of Enemy Seven in Wave One"
+    },
+    "Wave_Seven_Enemy_One_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy One of Wave Seven out equally across the spawn angle cone."
+    },
+    "Wave_Seven_Enemy_One_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy One of Wave Seven."
+    },
+    "Wave_Seven_Enemy_One_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy One of Wave Seven relative to the front of the spawner."
+    },
+    "Wave_Seven_Enemy_One_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy One of Wave Seven."
     },
     "Wave_Seven_Enemy_Two_Type": {
-      "Value": "Scarak_Fighter"
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Seven in Wave Two"
     },
-    "Wave_Seven_Enemy_Two_Amount": {
+    "Wave_Seven_Enemy_Two_Count": {
       "Value": [
         2,
         2
-      ]
+      ],
+      "Description": "The quantity of Enemy Seven in Wave Two"
+    },
+    "Wave_Seven_Enemy_Two_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Two of Wave Seven out equally across the spawn angle cone."
+    },
+    "Wave_Seven_Enemy_Two_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Two of Wave Seven."
+    },
+    "Wave_Seven_Enemy_Two_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Two of Wave Seven relative to the front of the spawner."
+    },
+    "Wave_Seven_Enemy_Two_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Two of Wave Seven."
     },
     "Wave_Seven_Enemy_Three_Type": {
-      "Value": "Scarak_Fighter"
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Seven in Wave Three"
     },
-    "Wave_Seven_Enemy_Three_Amount": {
+    "Wave_Seven_Enemy_Three_Count": {
       "Value": [
         2,
         2
-      ]
+      ],
+      "Description": "The quantity of Enemy Seven in Wave Three"
+    },
+    "Wave_Seven_Enemy_Three_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Three of Wave Seven out equally across the spawn angle cone."
+    },
+    "Wave_Seven_Enemy_Three_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Three of Wave Seven."
+    },
+    "Wave_Seven_Enemy_Three_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Three of Wave Seven relative to the front of the spawner."
+    },
+    "Wave_Seven_Enemy_Three_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Three of Wave Seven."
+    },
+    "Wave_Seven_Enemy_Four_Type": {
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Seven in Wave Four"
+    },
+    "Wave_Seven_Enemy_Four_Count": {
+      "Value": [
+        2,
+        2
+      ],
+      "Description": "The quantity of Enemy Seven in Wave Four"
+    },
+    "Wave_Seven_Enemy_Four_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Four of Wave Seven out equally across the spawn angle cone."
+    },
+    "Wave_Seven_Enemy_Four_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Four of Wave Seven."
+    },
+    "Wave_Seven_Enemy_Four_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Four of Wave Seven relative to the front of the spawner."
+    },
+    "Wave_Seven_Enemy_Four_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Four of Wave Seven."
+    },
+    "Wave_Seven_Enemy_Five_Type": {
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Seven in Wave Five"
+    },
+    "Wave_Seven_Enemy_Five_Count": {
+      "Value": [
+        2,
+        2
+      ],
+      "Description": "The quantity of Enemy Seven in Wave Five"
+    },
+    "Wave_Seven_Enemy_Five_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Five of Wave Seven out equally across the spawn angle cone."
+    },
+    "Wave_Seven_Enemy_Five_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Five of Wave Seven."
+    },
+    "Wave_Seven_Enemy_Five_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Five of Wave Seven relative to the front of the spawner."
+    },
+    "Wave_Seven_Enemy_Five_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Five of Wave Seven."
     },
     "Wave_Eight_Start_Time": {
       "Value": [
@@ -275,31 +1027,139 @@
       "Description": "Lower value for calculating the moment Wave 1 starts."
     },
     "Wave_Eight_Enemy_One_Type": {
-      "Value": "Scarak_Fighter"
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Eight in Wave One"
     },
-    "Wave_Eight_Enemy_One_Amount": {
+    "Wave_Eight_Enemy_One_Count": {
       "Value": [
         2,
         2
-      ]
+      ],
+      "Description": "The quantity of Enemy Eight in Wave One"
+    },
+    "Wave_Eight_Enemy_One_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy One of Wave Eight out equally across the spawn angle cone."
+    },
+    "Wave_Eight_Enemy_One_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy One of Wave Eight."
+    },
+    "Wave_Eight_Enemy_One_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy One of Wave Eight relative to the front of the spawner."
+    },
+    "Wave_Eight_Enemy_One_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy One of Wave Eight."
     },
     "Wave_Eight_Enemy_Two_Type": {
-      "Value": "Scarak_Fighter"
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Eight in Wave Two"
     },
-    "Wave_Eight_Enemy_Two_Amount": {
+    "Wave_Eight_Enemy_Two_Count": {
       "Value": [
         2,
         2
-      ]
+      ],
+      "Description": "The quantity of Enemy Eight in Wave Two"
+    },
+    "Wave_Eight_Enemy_Two_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Two of Wave Eight out equally across the spawn angle cone."
+    },
+    "Wave_Eight_Enemy_Two_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Two of Wave Eight."
+    },
+    "Wave_Eight_Enemy_Two_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Two of Wave Eight relative to the front of the spawner."
+    },
+    "Wave_Eight_Enemy_Two_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Two of Wave Eight."
     },
     "Wave_Eight_Enemy_Three_Type": {
-      "Value": "Scarak_Fighter"
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Eight in Wave Three"
     },
-    "Wave_Eight_Enemy_Three_Amount": {
+    "Wave_Eight_Enemy_Three_Count": {
       "Value": [
         2,
         2
-      ]
+      ],
+      "Description": "The quantity of Enemy Eight in Wave Three"
+    },
+    "Wave_Eight_Enemy_Three_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Three of Wave Eight out equally across the spawn angle cone."
+    },
+    "Wave_Eight_Enemy_Three_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Three of Wave Eight."
+    },
+    "Wave_Eight_Enemy_Three_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Three of Wave Eight relative to the front of the spawner."
+    },
+    "Wave_Eight_Enemy_Three_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Three of Wave Eight."
+    },
+    "Wave_Eight_Enemy_Four_Type": {
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Eight in Wave Four"
+    },
+    "Wave_Eight_Enemy_Four_Count": {
+      "Value": [
+        2,
+        2
+      ],
+      "Description": "The quantity of Enemy Eight in Wave Four"
+    },
+    "Wave_Eight_Enemy_Four_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Four of Wave Eight out equally across the spawn angle cone."
+    },
+    "Wave_Eight_Enemy_Four_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Four of Wave Eight."
+    },
+    "Wave_Eight_Enemy_Four_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Four of Wave Eight relative to the front of the spawner."
+    },
+    "Wave_Eight_Enemy_Four_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Four of Wave Eight."
+    },
+    "Wave_Eight_Enemy_Five_Type": {
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Eight in Wave Five"
+    },
+    "Wave_Eight_Enemy_Five_Count": {
+      "Value": [
+        2,
+        2
+      ],
+      "Description": "The quantity of Enemy Eight in Wave Five"
+    },
+    "Wave_Eight_Enemy_Five_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Five of Wave Eight out equally across the spawn angle cone."
+    },
+    "Wave_Eight_Enemy_Five_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Five of Wave Eight."
+    },
+    "Wave_Eight_Enemy_Five_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Five of Wave Eight relative to the front of the spawner."
+    },
+    "Wave_Eight_Enemy_Five_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Five of Wave Eight."
     },
     "Wave_Nine_Start_Time": {
       "Value": [
@@ -309,31 +1169,139 @@
       "Description": "Lower value for calculating the moment Wave 1 starts."
     },
     "Wave_Nine_Enemy_One_Type": {
-      "Value": "Scarak_Fighter"
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Nine in Wave One"
     },
-    "Wave_Nine_Enemy_One_Amount": {
+    "Wave_Nine_Enemy_One_Count": {
       "Value": [
         2,
         2
-      ]
+      ],
+      "Description": "The quantity of Enemy Nine in Wave One"
+    },
+    "Wave_Nine_Enemy_One_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy One of Wave Nine out equally across the spawn angle cone."
+    },
+    "Wave_Nine_Enemy_One_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy One of Wave Nine."
+    },
+    "Wave_Nine_Enemy_One_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy One of Wave Nine relative to the front of the spawner."
+    },
+    "Wave_Nine_Enemy_One_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy One of Wave Nine."
     },
     "Wave_Nine_Enemy_Two_Type": {
-      "Value": "Scarak_Fighter"
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Nine in Wave Two"
     },
-    "Wave_Nine_Enemy_Two_Amount": {
+    "Wave_Nine_Enemy_Two_Count": {
       "Value": [
         2,
         2
-      ]
+      ],
+      "Description": "The quantity of Enemy Nine in Wave Two"
+    },
+    "Wave_Nine_Enemy_Two_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Two of Wave Nine out equally across the spawn angle cone."
+    },
+    "Wave_Nine_Enemy_Two_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Two of Wave Nine."
+    },
+    "Wave_Nine_Enemy_Two_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Two of Wave Nine relative to the front of the spawner."
+    },
+    "Wave_Nine_Enemy_Two_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Two of Wave Nine."
     },
     "Wave_Nine_Enemy_Three_Type": {
-      "Value": "Scarak_Fighter"
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Nine in Wave Three"
     },
-    "Wave_Nine_Enemy_Three_Amount": {
+    "Wave_Nine_Enemy_Three_Count": {
       "Value": [
         2,
         2
-      ]
+      ],
+      "Description": "The quantity of Enemy Nine in Wave Three"
+    },
+    "Wave_Nine_Enemy_Three_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Three of Wave Nine out equally across the spawn angle cone."
+    },
+    "Wave_Nine_Enemy_Three_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Three of Wave Nine."
+    },
+    "Wave_Nine_Enemy_Three_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Three of Wave Nine relative to the front of the spawner."
+    },
+    "Wave_Nine_Enemy_Three_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Three of Wave Nine."
+    },
+    "Wave_Nine_Enemy_Four_Type": {
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Nine in Wave Four"
+    },
+    "Wave_Nine_Enemy_Four_Count": {
+      "Value": [
+        2,
+        2
+      ],
+      "Description": "The quantity of Enemy Nine in Wave Four"
+    },
+    "Wave_Nine_Enemy_Four_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Four of Wave Nine out equally across the spawn angle cone."
+    },
+    "Wave_Nine_Enemy_Four_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Four of Wave Nine."
+    },
+    "Wave_Nine_Enemy_Four_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Four of Wave Nine relative to the front of the spawner."
+    },
+    "Wave_Nine_Enemy_Four_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Four of Wave Nine."
+    },
+    "Wave_Nine_Enemy_Five_Type": {
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Nine in Wave Five"
+    },
+    "Wave_Nine_Enemy_Five_Count": {
+      "Value": [
+        2,
+        2
+      ],
+      "Description": "The quantity of Enemy Nine in Wave Five"
+    },
+    "Wave_Nine_Enemy_Five_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Five of Wave Nine out equally across the spawn angle cone."
+    },
+    "Wave_Nine_Enemy_Five_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Five of Wave Nine."
+    },
+    "Wave_Nine_Enemy_Five_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Five of Wave Nine relative to the front of the spawner."
+    },
+    "Wave_Nine_Enemy_Five_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Five of Wave Nine."
     },
     "Wave_Ten_Start_Time": {
       "Value": [
@@ -343,122 +1311,1174 @@
       "Description": "Lower value for calculating the moment Wave 1 starts."
     },
     "Wave_Ten_Enemy_One_Type": {
-      "Value": "Scarak_Fighter"
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Ten in Wave One"
     },
-    "Wave_Ten_Enemy_One_Amount": {
+    "Wave_Ten_Enemy_One_Count": {
       "Value": [
         2,
         2
-      ]
+      ],
+      "Description": "The quantity of Enemy Ten in Wave One"
+    },
+    "Wave_Ten_Enemy_One_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy One of Wave Ten out equally across the spawn angle cone."
+    },
+    "Wave_Ten_Enemy_One_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy One of Wave Ten."
+    },
+    "Wave_Ten_Enemy_One_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy One of Wave Ten relative to the front of the spawner."
+    },
+    "Wave_Ten_Enemy_One_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy One of Wave Ten."
     },
     "Wave_Ten_Enemy_Two_Type": {
-      "Value": "Scarak_Fighter"
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Ten in Wave Two"
     },
-    "Wave_Ten_Enemy_Two_Amount": {
+    "Wave_Ten_Enemy_Two_Count": {
       "Value": [
         2,
         2
-      ]
+      ],
+      "Description": "The quantity of Enemy Ten in Wave Two"
+    },
+    "Wave_Ten_Enemy_Two_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Two of Wave Ten out equally across the spawn angle cone."
+    },
+    "Wave_Ten_Enemy_Two_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Two of Wave Ten."
+    },
+    "Wave_Ten_Enemy_Two_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Two of Wave Ten relative to the front of the spawner."
+    },
+    "Wave_Ten_Enemy_Two_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Two of Wave Ten."
     },
     "Wave_Ten_Enemy_Three_Type": {
-      "Value": "Scarak_Fighter"
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Ten in Wave Three"
     },
-    "Wave_Ten_Enemy_Three_Amount": {
+    "Wave_Ten_Enemy_Three_Count": {
       "Value": [
         2,
         2
-      ]
+      ],
+      "Description": "The quantity of Enemy Ten in Wave Three"
+    },
+    "Wave_Ten_Enemy_Three_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Three of Wave Ten out equally across the spawn angle cone."
+    },
+    "Wave_Ten_Enemy_Three_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Three of Wave Ten."
+    },
+    "Wave_Ten_Enemy_Three_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Three of Wave Ten relative to the front of the spawner."
+    },
+    "Wave_Ten_Enemy_Three_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Three of Wave Ten."
+    },
+    "Wave_Ten_Enemy_Four_Type": {
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Ten in Wave Four"
+    },
+    "Wave_Ten_Enemy_Four_Count": {
+      "Value": [
+        2,
+        2
+      ],
+      "Description": "The quantity of Enemy Ten in Wave Four"
+    },
+    "Wave_Ten_Enemy_Four_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Four of Wave Ten out equally across the spawn angle cone."
+    },
+    "Wave_Ten_Enemy_Four_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Four of Wave Ten."
+    },
+    "Wave_Ten_Enemy_Four_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Four of Wave Ten relative to the front of the spawner."
+    },
+    "Wave_Ten_Enemy_Four_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Four of Wave Ten."
+    },
+    "Wave_Ten_Enemy_Five_Type": {
+      "Value": "Scarak_Fighter",
+      "Description": "The quantity of Enemy Ten in Wave Five"
+    },
+    "Wave_Ten_Enemy_Five_Count": {
+      "Value": [
+        2,
+        2
+      ],
+      "Description": "The quantity of Enemy Ten in Wave Five"
+    },
+    "Wave_Ten_Enemy_Five_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread Enemy Five of Wave Ten out equally across the spawn angle cone."
+    },
+    "Wave_Ten_Enemy_Five_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for Enemy Five of Wave Ten."
+    },
+    "Wave_Ten_Enemy_Five_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn Enemy Five of Wave Ten relative to the front of the spawner."
+    },
+    "Wave_Ten_Enemy_Five_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn Enemy Five of Wave Ten."
     }
   },
-  "$Comment": "This is another test.",
-  "StartState": "Idle",
   "Instructions": [
     {
-      "Sensor": {
-        "Type": "Any",
-      },
       "Instructions": [
         {
-          "Continue": true,
+          "Continue":  true,
           "Sensor": {
-            "Type": "Any",
-            "Once": true
+            "Type": "And",
+            "Sensors": [
+              {
+                "Type": "Player",
+                "Range": { "Compute": "Mob_Arena_Player_Sensor_Range"}
+              },
+              {
+                "Type": "State",
+                "State": "Idle"
+              }
+            ]
           },
           "Actions": [
             {
-              "Type": "TimerStart",
-              "Name": "WaveTimer",
-              "StartValueRange": [
-                600,
-                600
-              ],
-              "RestartValueRange": [
-                600,
-                600
-              ],
-              "Repeating": false
+              "Type": "State",
+              "State": "Active"
             }
           ]
         },
         {
-          "Reference": "Mob_Arena_Wave",
-          "Modify": {
-            "Wave_Start_Time": {"Compute": "Wave_One_Start_Time"}
-          }
-        },
-        {
-          "Reference": "Mob_Arena_Wave",
-          "Modify": {
-            "Wave_Start_Time": {"Compute": "Wave_Two_Start_Time"}
-          }
-        },
-        {
-          "Reference": "Mob_Arena_Wave",
-          "Modify": {
-            "Wave_Start_Time": {"Compute": "Wave_Three_Start_Time"}
-          }
-        },
-        {
-          "Reference": "Mob_Arena_Wave",
-          "Modify": {
-            "Wave_Start_Time": {"Compute": "Wave_Four_Start_Time"}
-          }
-        },
-        {
-          "Reference": "Mob_Arena_Wave",
-          "Modify": {
-            "Wave_Start_Time": {"Compute": "Wave_Five_Start_Time"}
-          }
-        },
-        {
-          "Reference": "Mob_Arena_Wave",
-          "Modify": {
-            "Wave_Start_Time": {"Compute": "Wave_Six_Start_Time"}
-          }
-        },
-        {
-          "Reference": "Mob_Arena_Wave",
-          "Modify": {
-            "Wave_Start_Time": {"Compute": "Wave_Seven_Start_Time"}
-          }
-        },
-        {
-          "Reference": "Mob_Arena_Wave",
-          "Modify": {
-            "Wave_Start_Time": {"Compute": "Wave_Eight_Start_Time"}
-          }
-        },
-        {
-          "Reference": "Mob_Arena_Wave",
-          "Modify": {
-            "Wave_Start_Time": {"Compute": "Wave_Nine_Start_Time"}
-          }
-        },
-        {
-          "Reference": "Mob_Arena_Wave",
-          "Modify": {
-            "Wave_Start_Time": {"Compute": "Wave_Ten_Start_Time"}
-          }
+          "Continue": true,
+          "Sensor": {
+            "Type": "State",
+            "State": "Active"
+          },
+          "Instructions": [
+            {
+              "Continue": true,
+              "Sensor": {
+                "Type": "Any"
+              },
+              "Actions": [
+                {
+                  "Type": "TimerStart",
+                  "Name": "WaveTimer",
+                  "StartValueRange": {
+                    "Compute": "Mob_Arena_Timer_Start_Range"
+                  },
+                  "RestartValueRange": [
+                    600,
+                    600
+                  ],
+                  "Repeating": false
+                }
+              ]
+            },
+            {
+              "Reference": "Mob_Arena_Wave",
+              "Modify": {
+                "Wave_Start_Time": {
+                  "Compute": "Wave_One_Start_Time"
+                },
+                "Wave_Enemy_One_Type": {
+                  "Compute": "Wave_One_Enemy_One_Type"
+                },
+                "Wave_Enemy_One_Count": {
+                  "Compute": "Wave_One_Enemy_One_Count"
+                },
+                "Wave_Enemy_One_Fan_Out": {
+                  "Compute": "Wave_One_Enemy_One_Fan_Out"
+                },
+                "Wave_Enemy_One_Spawn_Angle": {
+                  "Compute": "Wave_One_Enemy_One_Spawn_Angle"
+                },
+                "Wave_Enemy_One_Spawn_Direction": {
+                  "Compute": "Wave_One_Enemy_One_Spawn_Direction"
+                },
+                "Wave_Enemy_One_Distance_Range": {
+                  "Compute": "Wave_One_Enemy_One_Distance_Range"
+                },
+                "Wave_Enemy_Two_Type": {
+                  "Compute": "Wave_One_Enemy_Two_Type"
+                },
+                "Wave_Enemy_Two_Count": {
+                  "Compute": "Wave_One_Enemy_Two_Count"
+                },
+                "Wave_Enemy_Two_Fan_Out": {
+                  "Compute": "Wave_One_Enemy_Two_Fan_Out"
+                },
+                "Wave_Enemy_Two_Spawn_Angle": {
+                  "Compute": "Wave_One_Enemy_Two_Spawn_Angle"
+                },
+                "Wave_Enemy_Two_Spawn_Direction": {
+                  "Compute": "Wave_One_Enemy_Two_Spawn_Direction"
+                },
+                "Wave_Enemy_Two_Distance_Range": {
+                  "Compute": "Wave_One_Enemy_Two_Distance_Range"
+                },
+                "Wave_Enemy_Three_Type": {
+                  "Compute": "Wave_One_Enemy_Three_Type"
+                },
+                "Wave_Enemy_Three_Count": {
+                  "Compute": "Wave_One_Enemy_Three_Count"
+                },
+                "Wave_Enemy_Three_Fan_Out": {
+                  "Compute": "Wave_One_Enemy_Three_Fan_Out"
+                },
+                "Wave_Enemy_Three_Spawn_Angle": {
+                  "Compute": "Wave_One_Enemy_Three_Spawn_Angle"
+                },
+                "Wave_Enemy_Three_Spawn_Direction": {
+                  "Compute": "Wave_One_Enemy_Three_Spawn_Direction"
+                },
+                "Wave_Enemy_Three_Distance_Range": {
+                  "Compute": "Wave_One_Enemy_Three_Distance_Range"
+                },
+                "Wave_Enemy_Four_Type": {
+                  "Compute": "Wave_One_Enemy_Four_Type"
+                },
+                "Wave_Enemy_Four_Count": {
+                  "Compute": "Wave_One_Enemy_Four_Count"
+                },
+                "Wave_Enemy_Four_Fan_Out": {
+                  "Compute": "Wave_One_Enemy_Four_Fan_Out"
+                },
+                "Wave_Enemy_Four_Spawn_Angle": {
+                  "Compute": "Wave_One_Enemy_Four_Spawn_Angle"
+                },
+                "Wave_Enemy_Four_Spawn_Direction": {
+                  "Compute": "Wave_One_Enemy_Four_Spawn_Direction"
+                },
+                "Wave_Enemy_Four_Distance_Range": {
+                  "Compute": "Wave_One_Enemy_Four_Distance_Range"
+                },
+                "Wave_Enemy_Five_Type": {
+                  "Compute": "Wave_One_Enemy_Five_Type"
+                },
+                "Wave_Enemy_Five_Count": {
+                  "Compute": "Wave_One_Enemy_Five_Count"
+                },
+                "Wave_Enemy_Five_Fan_Out": {
+                  "Compute": "Wave_One_Enemy_Five_Fan_Out"
+                },
+                "Wave_Enemy_Five_Spawn_Angle": {
+                  "Compute": "Wave_One_Enemy_Five_Spawn_Angle"
+                },
+                "Wave_Enemy_Five_Spawn_Direction": {
+                  "Compute": "Wave_One_Enemy_Five_Spawn_Direction"
+                },
+                "Wave_Enemy_Five_Distance_Range": {
+                  "Compute": "Wave_One_Enemy_Five_Distance_Range"
+                }
+              }
+            },
+            {
+              "Reference": "Mob_Arena_Wave",
+              "Modify": {
+                "Wave_Start_Time": {
+                  "Compute": "Wave_Two_Start_Time"
+                },
+                "Wave_Enemy_One_Type": {
+                  "Compute": "Wave_Two_Enemy_One_Type"
+                },
+                "Wave_Enemy_One_Count": {
+                  "Compute": "Wave_Two_Enemy_One_Count"
+                },
+                "Wave_Enemy_One_Fan_Out": {
+                  "Compute": "Wave_Two_Enemy_One_Fan_Out"
+                },
+                "Wave_Enemy_One_Spawn_Angle": {
+                  "Compute": "Wave_Two_Enemy_One_Spawn_Angle"
+                },
+                "Wave_Enemy_One_Spawn_Direction": {
+                  "Compute": "Wave_Two_Enemy_One_Spawn_Direction"
+                },
+                "Wave_Enemy_One_Distance_Range": {
+                  "Compute": "Wave_Two_Enemy_One_Distance_Range"
+                },
+                "Wave_Enemy_Two_Type": {
+                  "Compute": "Wave_Two_Enemy_Two_Type"
+                },
+                "Wave_Enemy_Two_Count": {
+                  "Compute": "Wave_Two_Enemy_Two_Count"
+                },
+                "Wave_Enemy_Two_Fan_Out": {
+                  "Compute": "Wave_Two_Enemy_Two_Fan_Out"
+                },
+                "Wave_Enemy_Two_Spawn_Angle": {
+                  "Compute": "Wave_Two_Enemy_Two_Spawn_Angle"
+                },
+                "Wave_Enemy_Two_Spawn_Direction": {
+                  "Compute": "Wave_Two_Enemy_Two_Spawn_Direction"
+                },
+                "Wave_Enemy_Two_Distance_Range": {
+                  "Compute": "Wave_Two_Enemy_Two_Distance_Range"
+                },
+                "Wave_Enemy_Three_Type": {
+                  "Compute": "Wave_Two_Enemy_Three_Type"
+                },
+                "Wave_Enemy_Three_Count": {
+                  "Compute": "Wave_Two_Enemy_Three_Count"
+                },
+                "Wave_Enemy_Three_Fan_Out": {
+                  "Compute": "Wave_Two_Enemy_Three_Fan_Out"
+                },
+                "Wave_Enemy_Three_Spawn_Angle": {
+                  "Compute": "Wave_Two_Enemy_Three_Spawn_Angle"
+                },
+                "Wave_Enemy_Three_Spawn_Direction": {
+                  "Compute": "Wave_Two_Enemy_Three_Spawn_Direction"
+                },
+                "Wave_Enemy_Three_Distance_Range": {
+                  "Compute": "Wave_Two_Enemy_Three_Distance_Range"
+                },
+                "Wave_Enemy_Four_Type": {
+                  "Compute": "Wave_Two_Enemy_Four_Type"
+                },
+                "Wave_Enemy_Four_Count": {
+                  "Compute": "Wave_Two_Enemy_Four_Count"
+                },
+                "Wave_Enemy_Four_Fan_Out": {
+                  "Compute": "Wave_Two_Enemy_Four_Fan_Out"
+                },
+                "Wave_Enemy_Four_Spawn_Angle": {
+                  "Compute": "Wave_Two_Enemy_Four_Spawn_Angle"
+                },
+                "Wave_Enemy_Four_Spawn_Direction": {
+                  "Compute": "Wave_Two_Enemy_Four_Spawn_Direction"
+                },
+                "Wave_Enemy_Four_Distance_Range": {
+                  "Compute": "Wave_Two_Enemy_Four_Distance_Range"
+                },
+                "Wave_Enemy_Five_Type": {
+                  "Compute": "Wave_Two_Enemy_Five_Type"
+                },
+                "Wave_Enemy_Five_Count": {
+                  "Compute": "Wave_Two_Enemy_Five_Count"
+                },
+                "Wave_Enemy_Five_Fan_Out": {
+                  "Compute": "Wave_Two_Enemy_Five_Fan_Out"
+                },
+                "Wave_Enemy_Five_Spawn_Angle": {
+                  "Compute": "Wave_Two_Enemy_Five_Spawn_Angle"
+                },
+                "Wave_Enemy_Five_Spawn_Direction": {
+                  "Compute": "Wave_Two_Enemy_Five_Spawn_Direction"
+                },
+                "Wave_Enemy_Five_Distance_Range": {
+                  "Compute": "Wave_Two_Enemy_Five_Distance_Range"
+                }
+              }
+            },
+            {
+              "Reference": "Mob_Arena_Wave",
+              "Modify": {
+                "Wave_Start_Time": {
+                  "Compute": "Wave_Three_Start_Time"
+                },
+                "Wave_Enemy_One_Type": {
+                  "Compute": "Wave_Three_Enemy_One_Type"
+                },
+                "Wave_Enemy_One_Count": {
+                  "Compute": "Wave_Three_Enemy_One_Count"
+                },
+                "Wave_Enemy_One_Fan_Out": {
+                  "Compute": "Wave_Three_Enemy_One_Fan_Out"
+                },
+                "Wave_Enemy_One_Spawn_Angle": {
+                  "Compute": "Wave_Three_Enemy_One_Spawn_Angle"
+                },
+                "Wave_Enemy_One_Spawn_Direction": {
+                  "Compute": "Wave_Three_Enemy_One_Spawn_Direction"
+                },
+                "Wave_Enemy_One_Distance_Range": {
+                  "Compute": "Wave_Three_Enemy_One_Distance_Range"
+                },
+                "Wave_Enemy_Two_Type": {
+                  "Compute": "Wave_Three_Enemy_Two_Type"
+                },
+                "Wave_Enemy_Two_Count": {
+                  "Compute": "Wave_Three_Enemy_Two_Count"
+                },
+                "Wave_Enemy_Two_Fan_Out": {
+                  "Compute": "Wave_Three_Enemy_Two_Fan_Out"
+                },
+                "Wave_Enemy_Two_Spawn_Angle": {
+                  "Compute": "Wave_Three_Enemy_Two_Spawn_Angle"
+                },
+                "Wave_Enemy_Two_Spawn_Direction": {
+                  "Compute": "Wave_Three_Enemy_Two_Spawn_Direction"
+                },
+                "Wave_Enemy_Two_Distance_Range": {
+                  "Compute": "Wave_Three_Enemy_Two_Distance_Range"
+                },
+                "Wave_Enemy_Three_Type": {
+                  "Compute": "Wave_Three_Enemy_Three_Type"
+                },
+                "Wave_Enemy_Three_Count": {
+                  "Compute": "Wave_Three_Enemy_Three_Count"
+                },
+                "Wave_Enemy_Three_Fan_Out": {
+                  "Compute": "Wave_Three_Enemy_Three_Fan_Out"
+                },
+                "Wave_Enemy_Three_Spawn_Angle": {
+                  "Compute": "Wave_Three_Enemy_Three_Spawn_Angle"
+                },
+                "Wave_Enemy_Three_Spawn_Direction": {
+                  "Compute": "Wave_Three_Enemy_Three_Spawn_Direction"
+                },
+                "Wave_Enemy_Three_Distance_Range": {
+                  "Compute": "Wave_Three_Enemy_Three_Distance_Range"
+                },
+                "Wave_Enemy_Four_Type": {
+                  "Compute": "Wave_Three_Enemy_Four_Type"
+                },
+                "Wave_Enemy_Four_Count": {
+                  "Compute": "Wave_Three_Enemy_Four_Count"
+                },
+                "Wave_Enemy_Four_Fan_Out": {
+                  "Compute": "Wave_Three_Enemy_Four_Fan_Out"
+                },
+                "Wave_Enemy_Four_Spawn_Angle": {
+                  "Compute": "Wave_Three_Enemy_Four_Spawn_Angle"
+                },
+                "Wave_Enemy_Four_Spawn_Direction": {
+                  "Compute": "Wave_Three_Enemy_Four_Spawn_Direction"
+                },
+                "Wave_Enemy_Four_Distance_Range": {
+                  "Compute": "Wave_Three_Enemy_Four_Distance_Range"
+                },
+                "Wave_Enemy_Five_Type": {
+                  "Compute": "Wave_Three_Enemy_Five_Type"
+                },
+                "Wave_Enemy_Five_Count": {
+                  "Compute": "Wave_Three_Enemy_Five_Count"
+                },
+                "Wave_Enemy_Five_Fan_Out": {
+                  "Compute": "Wave_Three_Enemy_Five_Fan_Out"
+                },
+                "Wave_Enemy_Five_Spawn_Angle": {
+                  "Compute": "Wave_Three_Enemy_Five_Spawn_Angle"
+                },
+                "Wave_Enemy_Five_Spawn_Direction": {
+                  "Compute": "Wave_Three_Enemy_Five_Spawn_Direction"
+                },
+                "Wave_Enemy_Five_Distance_Range": {
+                  "Compute": "Wave_Three_Enemy_Five_Distance_Range"
+                }
+              }
+            },
+            {
+              "Reference": "Mob_Arena_Wave",
+              "Modify": {
+                "Wave_Start_Time": {
+                  "Compute": "Wave_Four_Start_Time"
+                },
+                "Wave_Enemy_One_Type": {
+                  "Compute": "Wave_Four_Enemy_One_Type"
+                },
+                "Wave_Enemy_One_Count": {
+                  "Compute": "Wave_Four_Enemy_One_Count"
+                },
+                "Wave_Enemy_One_Fan_Out": {
+                  "Compute": "Wave_Four_Enemy_One_Fan_Out"
+                },
+                "Wave_Enemy_One_Spawn_Angle": {
+                  "Compute": "Wave_Four_Enemy_One_Spawn_Angle"
+                },
+                "Wave_Enemy_One_Spawn_Direction": {
+                  "Compute": "Wave_Four_Enemy_One_Spawn_Direction"
+                },
+                "Wave_Enemy_One_Distance_Range": {
+                  "Compute": "Wave_Four_Enemy_One_Distance_Range"
+                },
+                "Wave_Enemy_Two_Type": {
+                  "Compute": "Wave_Four_Enemy_Two_Type"
+                },
+                "Wave_Enemy_Two_Count": {
+                  "Compute": "Wave_Four_Enemy_Two_Count"
+                },
+                "Wave_Enemy_Two_Fan_Out": {
+                  "Compute": "Wave_Four_Enemy_Two_Fan_Out"
+                },
+                "Wave_Enemy_Two_Spawn_Angle": {
+                  "Compute": "Wave_Four_Enemy_Two_Spawn_Angle"
+                },
+                "Wave_Enemy_Two_Spawn_Direction": {
+                  "Compute": "Wave_Four_Enemy_Two_Spawn_Direction"
+                },
+                "Wave_Enemy_Two_Distance_Range": {
+                  "Compute": "Wave_Four_Enemy_Two_Distance_Range"
+                },
+                "Wave_Enemy_Three_Type": {
+                  "Compute": "Wave_Four_Enemy_Three_Type"
+                },
+                "Wave_Enemy_Three_Count": {
+                  "Compute": "Wave_Four_Enemy_Three_Count"
+                },
+                "Wave_Enemy_Three_Fan_Out": {
+                  "Compute": "Wave_Four_Enemy_Three_Fan_Out"
+                },
+                "Wave_Enemy_Three_Spawn_Angle": {
+                  "Compute": "Wave_Four_Enemy_Three_Spawn_Angle"
+                },
+                "Wave_Enemy_Three_Spawn_Direction": {
+                  "Compute": "Wave_Four_Enemy_Three_Spawn_Direction"
+                },
+                "Wave_Enemy_Three_Distance_Range": {
+                  "Compute": "Wave_Four_Enemy_Three_Distance_Range"
+                },
+                "Wave_Enemy_Four_Type": {
+                  "Compute": "Wave_Four_Enemy_Four_Type"
+                },
+                "Wave_Enemy_Four_Count": {
+                  "Compute": "Wave_Four_Enemy_Four_Count"
+                },
+                "Wave_Enemy_Four_Fan_Out": {
+                  "Compute": "Wave_Four_Enemy_Four_Fan_Out"
+                },
+                "Wave_Enemy_Four_Spawn_Angle": {
+                  "Compute": "Wave_Four_Enemy_Four_Spawn_Angle"
+                },
+                "Wave_Enemy_Four_Spawn_Direction": {
+                  "Compute": "Wave_Four_Enemy_Four_Spawn_Direction"
+                },
+                "Wave_Enemy_Four_Distance_Range": {
+                  "Compute": "Wave_Four_Enemy_Four_Distance_Range"
+                },
+                "Wave_Enemy_Five_Type": {
+                  "Compute": "Wave_Four_Enemy_Five_Type"
+                },
+                "Wave_Enemy_Five_Count": {
+                  "Compute": "Wave_Four_Enemy_Five_Count"
+                },
+                "Wave_Enemy_Five_Fan_Out": {
+                  "Compute": "Wave_Four_Enemy_Five_Fan_Out"
+                },
+                "Wave_Enemy_Five_Spawn_Angle": {
+                  "Compute": "Wave_Four_Enemy_Five_Spawn_Angle"
+                },
+                "Wave_Enemy_Five_Spawn_Direction": {
+                  "Compute": "Wave_Four_Enemy_Five_Spawn_Direction"
+                },
+                "Wave_Enemy_Five_Distance_Range": {
+                  "Compute": "Wave_Four_Enemy_Five_Distance_Range"
+                }
+              }
+            },
+            {
+              "Reference": "Mob_Arena_Wave",
+              "Modify": {
+                "Wave_Start_Time": {
+                  "Compute": "Wave_Five_Start_Time"
+                },
+                "Wave_Enemy_One_Type": {
+                  "Compute": "Wave_Five_Enemy_One_Type"
+                },
+                "Wave_Enemy_One_Count": {
+                  "Compute": "Wave_Five_Enemy_One_Count"
+                },
+                "Wave_Enemy_One_Fan_Out": {
+                  "Compute": "Wave_Five_Enemy_One_Fan_Out"
+                },
+                "Wave_Enemy_One_Spawn_Angle": {
+                  "Compute": "Wave_Five_Enemy_One_Spawn_Angle"
+                },
+                "Wave_Enemy_One_Spawn_Direction": {
+                  "Compute": "Wave_Five_Enemy_One_Spawn_Direction"
+                },
+                "Wave_Enemy_One_Distance_Range": {
+                  "Compute": "Wave_Five_Enemy_One_Distance_Range"
+                },
+                "Wave_Enemy_Two_Type": {
+                  "Compute": "Wave_Five_Enemy_Two_Type"
+                },
+                "Wave_Enemy_Two_Count": {
+                  "Compute": "Wave_Five_Enemy_Two_Count"
+                },
+                "Wave_Enemy_Two_Fan_Out": {
+                  "Compute": "Wave_Five_Enemy_Two_Fan_Out"
+                },
+                "Wave_Enemy_Two_Spawn_Angle": {
+                  "Compute": "Wave_Five_Enemy_Two_Spawn_Angle"
+                },
+                "Wave_Enemy_Two_Spawn_Direction": {
+                  "Compute": "Wave_Five_Enemy_Two_Spawn_Direction"
+                },
+                "Wave_Enemy_Two_Distance_Range": {
+                  "Compute": "Wave_Five_Enemy_Two_Distance_Range"
+                },
+                "Wave_Enemy_Three_Type": {
+                  "Compute": "Wave_Five_Enemy_Three_Type"
+                },
+                "Wave_Enemy_Three_Count": {
+                  "Compute": "Wave_Five_Enemy_Three_Count"
+                },
+                "Wave_Enemy_Three_Fan_Out": {
+                  "Compute": "Wave_Five_Enemy_Three_Fan_Out"
+                },
+                "Wave_Enemy_Three_Spawn_Angle": {
+                  "Compute": "Wave_Five_Enemy_Three_Spawn_Angle"
+                },
+                "Wave_Enemy_Three_Spawn_Direction": {
+                  "Compute": "Wave_Five_Enemy_Three_Spawn_Direction"
+                },
+                "Wave_Enemy_Three_Distance_Range": {
+                  "Compute": "Wave_Five_Enemy_Three_Distance_Range"
+                },
+                "Wave_Enemy_Four_Type": {
+                  "Compute": "Wave_Five_Enemy_Four_Type"
+                },
+                "Wave_Enemy_Four_Count": {
+                  "Compute": "Wave_Five_Enemy_Four_Count"
+                },
+                "Wave_Enemy_Four_Fan_Out": {
+                  "Compute": "Wave_Five_Enemy_Four_Fan_Out"
+                },
+                "Wave_Enemy_Four_Spawn_Angle": {
+                  "Compute": "Wave_Five_Enemy_Four_Spawn_Angle"
+                },
+                "Wave_Enemy_Four_Spawn_Direction": {
+                  "Compute": "Wave_Five_Enemy_Four_Spawn_Direction"
+                },
+                "Wave_Enemy_Four_Distance_Range": {
+                  "Compute": "Wave_Five_Enemy_Four_Distance_Range"
+                },
+                "Wave_Enemy_Five_Type": {
+                  "Compute": "Wave_Five_Enemy_Five_Type"
+                },
+                "Wave_Enemy_Five_Count": {
+                  "Compute": "Wave_Five_Enemy_Five_Count"
+                },
+                "Wave_Enemy_Five_Fan_Out": {
+                  "Compute": "Wave_Five_Enemy_Five_Fan_Out"
+                },
+                "Wave_Enemy_Five_Spawn_Angle": {
+                  "Compute": "Wave_Five_Enemy_Five_Spawn_Angle"
+                },
+                "Wave_Enemy_Five_Spawn_Direction": {
+                  "Compute": "Wave_Five_Enemy_Five_Spawn_Direction"
+                },
+                "Wave_Enemy_Five_Distance_Range": {
+                  "Compute": "Wave_Five_Enemy_Five_Distance_Range"
+                }
+              }
+            },
+            {
+              "Reference": "Mob_Arena_Wave",
+              "Modify": {
+                "Wave_Start_Time": {
+                  "Compute": "Wave_Six_Start_Time"
+                },
+                "Wave_Enemy_One_Type": {
+                  "Compute": "Wave_Six_Enemy_One_Type"
+                },
+                "Wave_Enemy_One_Count": {
+                  "Compute": "Wave_Six_Enemy_One_Count"
+                },
+                "Wave_Enemy_One_Fan_Out": {
+                  "Compute": "Wave_Six_Enemy_One_Fan_Out"
+                },
+                "Wave_Enemy_One_Spawn_Angle": {
+                  "Compute": "Wave_Six_Enemy_One_Spawn_Angle"
+                },
+                "Wave_Enemy_One_Spawn_Direction": {
+                  "Compute": "Wave_Six_Enemy_One_Spawn_Direction"
+                },
+                "Wave_Enemy_One_Distance_Range": {
+                  "Compute": "Wave_Six_Enemy_One_Distance_Range"
+                },
+                "Wave_Enemy_Two_Type": {
+                  "Compute": "Wave_Six_Enemy_Two_Type"
+                },
+                "Wave_Enemy_Two_Count": {
+                  "Compute": "Wave_Six_Enemy_Two_Count"
+                },
+                "Wave_Enemy_Two_Fan_Out": {
+                  "Compute": "Wave_Six_Enemy_Two_Fan_Out"
+                },
+                "Wave_Enemy_Two_Spawn_Angle": {
+                  "Compute": "Wave_Six_Enemy_Two_Spawn_Angle"
+                },
+                "Wave_Enemy_Two_Spawn_Direction": {
+                  "Compute": "Wave_Six_Enemy_Two_Spawn_Direction"
+                },
+                "Wave_Enemy_Two_Distance_Range": {
+                  "Compute": "Wave_Six_Enemy_Two_Distance_Range"
+                },
+                "Wave_Enemy_Three_Type": {
+                  "Compute": "Wave_Six_Enemy_Three_Type"
+                },
+                "Wave_Enemy_Three_Count": {
+                  "Compute": "Wave_Six_Enemy_Three_Count"
+                },
+                "Wave_Enemy_Three_Fan_Out": {
+                  "Compute": "Wave_Six_Enemy_Three_Fan_Out"
+                },
+                "Wave_Enemy_Three_Spawn_Angle": {
+                  "Compute": "Wave_Six_Enemy_Three_Spawn_Angle"
+                },
+                "Wave_Enemy_Three_Spawn_Direction": {
+                  "Compute": "Wave_Six_Enemy_Three_Spawn_Direction"
+                },
+                "Wave_Enemy_Three_Distance_Range": {
+                  "Compute": "Wave_Six_Enemy_Three_Distance_Range"
+                },
+                "Wave_Enemy_Four_Type": {
+                  "Compute": "Wave_Six_Enemy_Four_Type"
+                },
+                "Wave_Enemy_Four_Count": {
+                  "Compute": "Wave_Six_Enemy_Four_Count"
+                },
+                "Wave_Enemy_Four_Fan_Out": {
+                  "Compute": "Wave_Six_Enemy_Four_Fan_Out"
+                },
+                "Wave_Enemy_Four_Spawn_Angle": {
+                  "Compute": "Wave_Six_Enemy_Four_Spawn_Angle"
+                },
+                "Wave_Enemy_Four_Spawn_Direction": {
+                  "Compute": "Wave_Six_Enemy_Four_Spawn_Direction"
+                },
+                "Wave_Enemy_Four_Distance_Range": {
+                  "Compute": "Wave_Six_Enemy_Four_Distance_Range"
+                },
+                "Wave_Enemy_Five_Type": {
+                  "Compute": "Wave_Six_Enemy_Five_Type"
+                },
+                "Wave_Enemy_Five_Count": {
+                  "Compute": "Wave_Six_Enemy_Five_Count"
+                },
+                "Wave_Enemy_Five_Fan_Out": {
+                  "Compute": "Wave_Six_Enemy_Five_Fan_Out"
+                },
+                "Wave_Enemy_Five_Spawn_Angle": {
+                  "Compute": "Wave_Six_Enemy_Five_Spawn_Angle"
+                },
+                "Wave_Enemy_Five_Spawn_Direction": {
+                  "Compute": "Wave_Six_Enemy_Five_Spawn_Direction"
+                },
+                "Wave_Enemy_Five_Distance_Range": {
+                  "Compute": "Wave_Six_Enemy_Five_Distance_Range"
+                }
+              }
+            },
+            {
+              "Reference": "Mob_Arena_Wave",
+              "Modify": {
+                "Wave_Start_Time": {
+                  "Compute": "Wave_Seven_Start_Time"
+                },
+                "Wave_Enemy_One_Type": {
+                  "Compute": "Wave_Seven_Enemy_One_Type"
+                },
+                "Wave_Enemy_One_Count": {
+                  "Compute": "Wave_Seven_Enemy_One_Count"
+                },
+                "Wave_Enemy_One_Fan_Out": {
+                  "Compute": "Wave_Seven_Enemy_One_Fan_Out"
+                },
+                "Wave_Enemy_One_Spawn_Angle": {
+                  "Compute": "Wave_Seven_Enemy_One_Spawn_Angle"
+                },
+                "Wave_Enemy_One_Spawn_Direction": {
+                  "Compute": "Wave_Seven_Enemy_One_Spawn_Direction"
+                },
+                "Wave_Enemy_One_Distance_Range": {
+                  "Compute": "Wave_Seven_Enemy_One_Distance_Range"
+                },
+                "Wave_Enemy_Two_Type": {
+                  "Compute": "Wave_Seven_Enemy_Two_Type"
+                },
+                "Wave_Enemy_Two_Count": {
+                  "Compute": "Wave_Seven_Enemy_Two_Count"
+                },
+                "Wave_Enemy_Two_Fan_Out": {
+                  "Compute": "Wave_Seven_Enemy_Two_Fan_Out"
+                },
+                "Wave_Enemy_Two_Spawn_Angle": {
+                  "Compute": "Wave_Seven_Enemy_Two_Spawn_Angle"
+                },
+                "Wave_Enemy_Two_Spawn_Direction": {
+                  "Compute": "Wave_Seven_Enemy_Two_Spawn_Direction"
+                },
+                "Wave_Enemy_Two_Distance_Range": {
+                  "Compute": "Wave_Seven_Enemy_Two_Distance_Range"
+                },
+                "Wave_Enemy_Three_Type": {
+                  "Compute": "Wave_Seven_Enemy_Three_Type"
+                },
+                "Wave_Enemy_Three_Count": {
+                  "Compute": "Wave_Seven_Enemy_Three_Count"
+                },
+                "Wave_Enemy_Three_Fan_Out": {
+                  "Compute": "Wave_Seven_Enemy_Three_Fan_Out"
+                },
+                "Wave_Enemy_Three_Spawn_Angle": {
+                  "Compute": "Wave_Seven_Enemy_Three_Spawn_Angle"
+                },
+                "Wave_Enemy_Three_Spawn_Direction": {
+                  "Compute": "Wave_Seven_Enemy_Three_Spawn_Direction"
+                },
+                "Wave_Enemy_Three_Distance_Range": {
+                  "Compute": "Wave_Seven_Enemy_Three_Distance_Range"
+                },
+                "Wave_Enemy_Four_Type": {
+                  "Compute": "Wave_Seven_Enemy_Four_Type"
+                },
+                "Wave_Enemy_Four_Count": {
+                  "Compute": "Wave_Seven_Enemy_Four_Count"
+                },
+                "Wave_Enemy_Four_Fan_Out": {
+                  "Compute": "Wave_Seven_Enemy_Four_Fan_Out"
+                },
+                "Wave_Enemy_Four_Spawn_Angle": {
+                  "Compute": "Wave_Seven_Enemy_Four_Spawn_Angle"
+                },
+                "Wave_Enemy_Four_Spawn_Direction": {
+                  "Compute": "Wave_Seven_Enemy_Four_Spawn_Direction"
+                },
+                "Wave_Enemy_Four_Distance_Range": {
+                  "Compute": "Wave_Seven_Enemy_Four_Distance_Range"
+                },
+                "Wave_Enemy_Five_Type": {
+                  "Compute": "Wave_Seven_Enemy_Five_Type"
+                },
+                "Wave_Enemy_Five_Count": {
+                  "Compute": "Wave_Seven_Enemy_Five_Count"
+                },
+                "Wave_Enemy_Five_Fan_Out": {
+                  "Compute": "Wave_Seven_Enemy_Five_Fan_Out"
+                },
+                "Wave_Enemy_Five_Spawn_Angle": {
+                  "Compute": "Wave_Seven_Enemy_Five_Spawn_Angle"
+                },
+                "Wave_Enemy_Five_Spawn_Direction": {
+                  "Compute": "Wave_Seven_Enemy_Five_Spawn_Direction"
+                },
+                "Wave_Enemy_Five_Distance_Range": {
+                  "Compute": "Wave_Seven_Enemy_Five_Distance_Range"
+                }
+              }
+            },
+            {
+              "Reference": "Mob_Arena_Wave",
+              "Modify": {
+                "Wave_Start_Time": {
+                  "Compute": "Wave_Eight_Start_Time"
+                },
+                "Wave_Enemy_One_Type": {
+                  "Compute": "Wave_Eight_Enemy_One_Type"
+                },
+                "Wave_Enemy_One_Count": {
+                  "Compute": "Wave_Eight_Enemy_One_Count"
+                },
+                "Wave_Enemy_One_Fan_Out": {
+                  "Compute": "Wave_Eight_Enemy_One_Fan_Out"
+                },
+                "Wave_Enemy_One_Spawn_Angle": {
+                  "Compute": "Wave_Eight_Enemy_One_Spawn_Angle"
+                },
+                "Wave_Enemy_One_Spawn_Direction": {
+                  "Compute": "Wave_Eight_Enemy_One_Spawn_Direction"
+                },
+                "Wave_Enemy_One_Distance_Range": {
+                  "Compute": "Wave_Eight_Enemy_One_Distance_Range"
+                },
+                "Wave_Enemy_Two_Type": {
+                  "Compute": "Wave_Eight_Enemy_Two_Type"
+                },
+                "Wave_Enemy_Two_Count": {
+                  "Compute": "Wave_Eight_Enemy_Two_Count"
+                },
+                "Wave_Enemy_Two_Fan_Out": {
+                  "Compute": "Wave_Eight_Enemy_Two_Fan_Out"
+                },
+                "Wave_Enemy_Two_Spawn_Angle": {
+                  "Compute": "Wave_Eight_Enemy_Two_Spawn_Angle"
+                },
+                "Wave_Enemy_Two_Spawn_Direction": {
+                  "Compute": "Wave_Eight_Enemy_Two_Spawn_Direction"
+                },
+                "Wave_Enemy_Two_Distance_Range": {
+                  "Compute": "Wave_Eight_Enemy_Two_Distance_Range"
+                },
+                "Wave_Enemy_Three_Type": {
+                  "Compute": "Wave_Eight_Enemy_Three_Type"
+                },
+                "Wave_Enemy_Three_Count": {
+                  "Compute": "Wave_Eight_Enemy_Three_Count"
+                },
+                "Wave_Enemy_Three_Fan_Out": {
+                  "Compute": "Wave_Eight_Enemy_Three_Fan_Out"
+                },
+                "Wave_Enemy_Three_Spawn_Angle": {
+                  "Compute": "Wave_Eight_Enemy_Three_Spawn_Angle"
+                },
+                "Wave_Enemy_Three_Spawn_Direction": {
+                  "Compute": "Wave_Eight_Enemy_Three_Spawn_Direction"
+                },
+                "Wave_Enemy_Three_Distance_Range": {
+                  "Compute": "Wave_Eight_Enemy_Three_Distance_Range"
+                },
+                "Wave_Enemy_Four_Type": {
+                  "Compute": "Wave_Eight_Enemy_Four_Type"
+                },
+                "Wave_Enemy_Four_Count": {
+                  "Compute": "Wave_Eight_Enemy_Four_Count"
+                },
+                "Wave_Enemy_Four_Fan_Out": {
+                  "Compute": "Wave_Eight_Enemy_Four_Fan_Out"
+                },
+                "Wave_Enemy_Four_Spawn_Angle": {
+                  "Compute": "Wave_Eight_Enemy_Four_Spawn_Angle"
+                },
+                "Wave_Enemy_Four_Spawn_Direction": {
+                  "Compute": "Wave_Eight_Enemy_Four_Spawn_Direction"
+                },
+                "Wave_Enemy_Four_Distance_Range": {
+                  "Compute": "Wave_Eight_Enemy_Four_Distance_Range"
+                },
+                "Wave_Enemy_Five_Type": {
+                  "Compute": "Wave_Eight_Enemy_Five_Type"
+                },
+                "Wave_Enemy_Five_Count": {
+                  "Compute": "Wave_Eight_Enemy_Five_Count"
+                },
+                "Wave_Enemy_Five_Fan_Out": {
+                  "Compute": "Wave_Eight_Enemy_Five_Fan_Out"
+                },
+                "Wave_Enemy_Five_Spawn_Angle": {
+                  "Compute": "Wave_Eight_Enemy_Five_Spawn_Angle"
+                },
+                "Wave_Enemy_Five_Spawn_Direction": {
+                  "Compute": "Wave_Eight_Enemy_Five_Spawn_Direction"
+                },
+                "Wave_Enemy_Five_Distance_Range": {
+                  "Compute": "Wave_Eight_Enemy_Five_Distance_Range"
+                }
+              }
+            },
+            {
+              "Reference": "Mob_Arena_Wave",
+              "Modify": {
+                "Wave_Start_Time": {
+                  "Compute": "Wave_Nine_Start_Time"
+                },
+                "Wave_Enemy_One_Type": {
+                  "Compute": "Wave_Nine_Enemy_One_Type"
+                },
+                "Wave_Enemy_One_Count": {
+                  "Compute": "Wave_Nine_Enemy_One_Count"
+                },
+                "Wave_Enemy_One_Fan_Out": {
+                  "Compute": "Wave_Nine_Enemy_One_Fan_Out"
+                },
+                "Wave_Enemy_One_Spawn_Angle": {
+                  "Compute": "Wave_Nine_Enemy_One_Spawn_Angle"
+                },
+                "Wave_Enemy_One_Spawn_Direction": {
+                  "Compute": "Wave_Nine_Enemy_One_Spawn_Direction"
+                },
+                "Wave_Enemy_One_Distance_Range": {
+                  "Compute": "Wave_Nine_Enemy_One_Distance_Range"
+                },
+                "Wave_Enemy_Two_Type": {
+                  "Compute": "Wave_Nine_Enemy_Two_Type"
+                },
+                "Wave_Enemy_Two_Count": {
+                  "Compute": "Wave_Nine_Enemy_Two_Count"
+                },
+                "Wave_Enemy_Two_Fan_Out": {
+                  "Compute": "Wave_Nine_Enemy_Two_Fan_Out"
+                },
+                "Wave_Enemy_Two_Spawn_Angle": {
+                  "Compute": "Wave_Nine_Enemy_Two_Spawn_Angle"
+                },
+                "Wave_Enemy_Two_Spawn_Direction": {
+                  "Compute": "Wave_Nine_Enemy_Two_Spawn_Direction"
+                },
+                "Wave_Enemy_Two_Distance_Range": {
+                  "Compute": "Wave_Nine_Enemy_Two_Distance_Range"
+                },
+                "Wave_Enemy_Three_Type": {
+                  "Compute": "Wave_Nine_Enemy_Three_Type"
+                },
+                "Wave_Enemy_Three_Count": {
+                  "Compute": "Wave_Nine_Enemy_Three_Count"
+                },
+                "Wave_Enemy_Three_Fan_Out": {
+                  "Compute": "Wave_Nine_Enemy_Three_Fan_Out"
+                },
+                "Wave_Enemy_Three_Spawn_Angle": {
+                  "Compute": "Wave_Nine_Enemy_Three_Spawn_Angle"
+                },
+                "Wave_Enemy_Three_Spawn_Direction": {
+                  "Compute": "Wave_Nine_Enemy_Three_Spawn_Direction"
+                },
+                "Wave_Enemy_Three_Distance_Range": {
+                  "Compute": "Wave_Nine_Enemy_Three_Distance_Range"
+                },
+                "Wave_Enemy_Four_Type": {
+                  "Compute": "Wave_Nine_Enemy_Four_Type"
+                },
+                "Wave_Enemy_Four_Count": {
+                  "Compute": "Wave_Nine_Enemy_Four_Count"
+                },
+                "Wave_Enemy_Four_Fan_Out": {
+                  "Compute": "Wave_Nine_Enemy_Four_Fan_Out"
+                },
+                "Wave_Enemy_Four_Spawn_Angle": {
+                  "Compute": "Wave_Nine_Enemy_Four_Spawn_Angle"
+                },
+                "Wave_Enemy_Four_Spawn_Direction": {
+                  "Compute": "Wave_Nine_Enemy_Four_Spawn_Direction"
+                },
+                "Wave_Enemy_Four_Distance_Range": {
+                  "Compute": "Wave_Nine_Enemy_Four_Distance_Range"
+                },
+                "Wave_Enemy_Five_Type": {
+                  "Compute": "Wave_Nine_Enemy_Five_Type"
+                },
+                "Wave_Enemy_Five_Count": {
+                  "Compute": "Wave_Nine_Enemy_Five_Count"
+                },
+                "Wave_Enemy_Five_Fan_Out": {
+                  "Compute": "Wave_Nine_Enemy_Five_Fan_Out"
+                },
+                "Wave_Enemy_Five_Spawn_Angle": {
+                  "Compute": "Wave_Nine_Enemy_Five_Spawn_Angle"
+                },
+                "Wave_Enemy_Five_Spawn_Direction": {
+                  "Compute": "Wave_Nine_Enemy_Five_Spawn_Direction"
+                },
+                "Wave_Enemy_Five_Distance_Range": {
+                  "Compute": "Wave_Nine_Enemy_Five_Distance_Range"
+                }
+              }
+            },
+            {
+              "Reference": "Mob_Arena_Wave",
+              "Modify": {
+                "Wave_Start_Time": {
+                  "Compute": "Wave_Ten_Start_Time"
+                },
+                "Wave_Enemy_One_Type": {
+                  "Compute": "Wave_Ten_Enemy_One_Type"
+                },
+                "Wave_Enemy_One_Count": {
+                  "Compute": "Wave_Ten_Enemy_One_Count"
+                },
+                "Wave_Enemy_One_Fan_Out": {
+                  "Compute": "Wave_Ten_Enemy_One_Fan_Out"
+                },
+                "Wave_Enemy_One_Spawn_Angle": {
+                  "Compute": "Wave_Ten_Enemy_One_Spawn_Angle"
+                },
+                "Wave_Enemy_One_Spawn_Direction": {
+                  "Compute": "Wave_Ten_Enemy_One_Spawn_Direction"
+                },
+                "Wave_Enemy_One_Distance_Range": {
+                  "Compute": "Wave_Ten_Enemy_One_Distance_Range"
+                },
+                "Wave_Enemy_Two_Type": {
+                  "Compute": "Wave_Ten_Enemy_Two_Type"
+                },
+                "Wave_Enemy_Two_Count": {
+                  "Compute": "Wave_Ten_Enemy_Two_Count"
+                },
+                "Wave_Enemy_Two_Fan_Out": {
+                  "Compute": "Wave_Ten_Enemy_Two_Fan_Out"
+                },
+                "Wave_Enemy_Two_Spawn_Angle": {
+                  "Compute": "Wave_Ten_Enemy_Two_Spawn_Angle"
+                },
+                "Wave_Enemy_Two_Spawn_Direction": {
+                  "Compute": "Wave_Ten_Enemy_Two_Spawn_Direction"
+                },
+                "Wave_Enemy_Two_Distance_Range": {
+                  "Compute": "Wave_Ten_Enemy_Two_Distance_Range"
+                },
+                "Wave_Enemy_Three_Type": {
+                  "Compute": "Wave_Ten_Enemy_Three_Type"
+                },
+                "Wave_Enemy_Three_Count": {
+                  "Compute": "Wave_Ten_Enemy_Three_Count"
+                },
+                "Wave_Enemy_Three_Fan_Out": {
+                  "Compute": "Wave_Ten_Enemy_Three_Fan_Out"
+                },
+                "Wave_Enemy_Three_Spawn_Angle": {
+                  "Compute": "Wave_Ten_Enemy_Three_Spawn_Angle"
+                },
+                "Wave_Enemy_Three_Spawn_Direction": {
+                  "Compute": "Wave_Ten_Enemy_Three_Spawn_Direction"
+                },
+                "Wave_Enemy_Three_Distance_Range": {
+                  "Compute": "Wave_Ten_Enemy_Three_Distance_Range"
+                },
+                "Wave_Enemy_Four_Type": {
+                  "Compute": "Wave_Ten_Enemy_Four_Type"
+                },
+                "Wave_Enemy_Four_Count": {
+                  "Compute": "Wave_Ten_Enemy_Four_Count"
+                },
+                "Wave_Enemy_Four_Fan_Out": {
+                  "Compute": "Wave_Ten_Enemy_Four_Fan_Out"
+                },
+                "Wave_Enemy_Four_Spawn_Angle": {
+                  "Compute": "Wave_Ten_Enemy_Four_Spawn_Angle"
+                },
+                "Wave_Enemy_Four_Spawn_Direction": {
+                  "Compute": "Wave_Ten_Enemy_Four_Spawn_Direction"
+                },
+                "Wave_Enemy_Four_Distance_Range": {
+                  "Compute": "Wave_Ten_Enemy_Four_Distance_Range"
+                },
+                "Wave_Enemy_Five_Type": {
+                  "Compute": "Wave_Ten_Enemy_Five_Type"
+                },
+                "Wave_Enemy_Five_Count": {
+                  "Compute": "Wave_Ten_Enemy_Five_Count"
+                },
+                "Wave_Enemy_Five_Fan_Out": {
+                  "Compute": "Wave_Ten_Enemy_Five_Fan_Out"
+                },
+                "Wave_Enemy_Five_Spawn_Angle": {
+                  "Compute": "Wave_Ten_Enemy_Five_Spawn_Angle"
+                },
+                "Wave_Enemy_Five_Spawn_Direction": {
+                  "Compute": "Wave_Ten_Enemy_Five_Spawn_Direction"
+                },
+                "Wave_Enemy_Five_Distance_Range": {
+                  "Compute": "Wave_Ten_Enemy_Five_Distance_Range"
+                }
+              }
+            }
+          ]
         }
       ]
     }

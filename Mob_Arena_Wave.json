@@ -22,6 +22,22 @@
       "Value": [ 1, 1 ],
       "Description": "Determines the minimum and maximum enemy count for enemy type 1 of 5."
     },
+    "Wave_Enemy_One_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread enemy type 1 of 5 out equally across the spawn angle cone."
+    },
+    "Wave_Enemy_One_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for enemy 1 of 5."
+    },
+    "Wave_Enemy_One_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn enemy type 1 of 5 relative to the front of the spawner."
+    },
+    "Wave_Enemy_One_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn enemy type 1 of 5."
+    },
     "Wave_Enemy_Two_Type": {
       "Value": "Gecko",
       "Description": "Determines the enemy type for enemy type 2 of 5."
@@ -29,6 +45,22 @@
     "Wave_Enemy_Two_Count": {
       "Value": [ 1, 1 ],
       "Description": "Determines the minimum and maximum enemy count for enemy type 2 of 5."
+    },
+    "Wave_Enemy_Two_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread enemy type 2 of 5 out equally across the spawn angle cone."
+    },
+    "Wave_Enemy_Two_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn enemy type 2 of 5."
+    },
+    "Wave_Enemy_Two_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for enemy 2 of 5."
+    },
+    "Wave_Enemy_Two_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn enemy type 2 of 5 relative to the front of the spawner."
     },
     "Wave_Enemy_Three_Type": {
       "Value": "Gecko",
@@ -38,6 +70,22 @@
       "Value": [ 1, 1 ],
       "Description": "Determines the minimum and maximum enemy count for enemy type 3 of 5."
     },
+    "Wave_Enemy_Three_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread enemy type 3 of 5 out equally across the spawn angle cone."
+    },
+    "Wave_Enemy_Three_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn enemy type 3 of 5."
+    },
+    "Wave_Enemy_Three_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for enemy 3 of 5."
+    },
+    "Wave_Enemy_Three_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn enemy type 3 of 5 relative to the front of the spawner."
+    },
     "Wave_Enemy_Four_Type": {
       "Value": "Gecko",
       "Description": "Determines the enemy type for enemy type 4 of 5."
@@ -46,6 +94,22 @@
       "Value": [ 1, 1 ],
       "Description": "Determines the minimum and maximum enemy count for enemy type 4 of 5."
     },
+    "Wave_Enemy_Four_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to spread enemy type 4 of 5 out equally across the spawn angle cone."
+    },
+    "Wave_Enemy_Four_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn enemy type 4 of 5."
+    },
+    "Wave_Enemy_Four_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for enemy 4 of 5."
+    },
+    "Wave_Enemy_Four_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn enemy type 4 of 5 relative to the front of the spawner."
+    },
     "Wave_Enemy_Five_Type": {
       "Value": "Gecko",
       "Description": "Determines the enemy type for enemy type 5 of 5."
@@ -53,6 +117,22 @@
     "Wave_Enemy_Five_Count": {
       "Value": [ 1, 1 ],
       "Description": "Determines the minimum and maximum enemy count for enemy type 5 of 5."
+    },
+    "Wave_Enemy_Five_Fan_Out": {
+      "Value": true,
+      "Description": "Whether to fan enemy type 5 of 5 out equally across the spawn angle cone."
+    },
+    "Wave_Enemy_Five_Distance_Range": {
+      "Value": [12, 12],
+      "Description": "The minimum and maximum distance from the spawner to spawn enemy type 5 of 5."
+    },
+    "Wave_Enemy_Five_Spawn_Angle": {
+      "Value": 330,
+      "Description": "Width of the spawn direction cone for enemy 5 of 5."
+    },
+    "Wave_Enemy_Five_Spawn_Direction": {
+      "Value": 0,
+      "Description": "Direction to spawn enemy type 5 of 5 relative to the front of the spawner."
     }
   },
   "Content": {
@@ -68,15 +148,22 @@
     "Actions": [
       {
         "Type": "Spawn",
-        "SpawnAngle": 330,
+        "SpawnAngle": {
+          "Compute": "Wave_Enemy_One_Spawn_Angle"
+        },
+        "SpawnDirection": {
+          "Compute": "Wave_Enemy_One_Spawn_Direction"
+        },
         "DistanceRange": {
-          "Compute": "Wave_Distance_Range"
+          "Compute": "Wave_Enemy_One_Distance_Range"
         },
         "Kind": {
           "Compute": "Wave_Enemy_One_Type"
         },
         "JoinFlock": true,
-        "FanOut": true,
+        "FanOut": {
+          "Compute": "Wave_Enemy_One_Fan_Out"
+        },
         "Once": true,
         "CountRange": {
           "Compute": "Wave_Enemy_One_Count"
@@ -88,15 +175,22 @@
       },
       {
         "Type": "Spawn",
-        "SpawnAngle": 330,
+        "SpawnAngle": {
+          "Compute": "Wave_Enemy_Two_Spawn_Angle"
+        },
+        "SpawnDirection": {
+          "Compute": "Wave_Enemy_Two_Spawn_Direction"
+        },
         "DistanceRange": {
-          "Compute": "Wave_Distance_Range"
+          "Compute": "Wave_Enemy_Two_Distance_Range"
         },
         "Kind": {
           "Compute": "Wave_Enemy_Two_Type"
         },
         "JoinFlock": true,
-        "FanOut": true,
+        "FanOut": {
+          "Compute": "Wave_Enemy_Two_Fan_Out"
+        },
         "Once": true,
         "CountRange": {
           "Compute": "Wave_Enemy_Two_Count"
@@ -108,15 +202,22 @@
       },
       {
         "Type": "Spawn",
-        "SpawnAngle": 330,
+        "SpawnAngle": {
+          "Compute": "Wave_Enemy_Three_Spawn_Angle"
+        },
+        "SpawnDirection": {
+          "Compute": "Wave_Enemy_Three_Spawn_Direction"
+        },
         "DistanceRange": {
-          "Compute": "Wave_Distance_Range"
+          "Compute": "Wave_Enemy_Three_Distance_Range"
         },
         "Kind": {
           "Compute": "Wave_Enemy_Three_Type"
         },
         "JoinFlock": true,
-        "FanOut": true,
+        "FanOut": {
+          "Compute": "Wave_Enemy_Three_Fan_Out"
+        },
         "Once": true,
         "CountRange": {
           "Compute": "Wave_Enemy_Three_Count"
@@ -128,15 +229,22 @@
       },
       {
         "Type": "Spawn",
-        "SpawnAngle": 330,
+        "SpawnAngle": {
+          "Compute": "Wave_Enemy_Four_Spawn_Angle"
+        },
+        "SpawnDirection": {
+          "Compute": "Wave_Enemy_Four_Spawn_Direction"
+        },
         "DistanceRange": {
-          "Compute": "Wave_Distance_Range"
+          "Compute": "Wave_Enemy_Four_Distance_Range"
         },
         "Kind": {
           "Compute": "Wave_Enemy_Four_Type"
         },
         "JoinFlock": true,
-        "FanOut": true,
+        "FanOut": {
+          "Compute": "Wave_Enemy_Four_Fan_Out"
+        },
         "Once": true,
         "CountRange": {
           "Compute": "Wave_Enemy_Four_Count"
@@ -148,15 +256,22 @@
       },
       {
         "Type": "Spawn",
-        "SpawnAngle": 330,
+        "SpawnAngle": {
+          "Compute": "Wave_Enemy_Five_Spawn_Angle"
+        },
+        "SpawnDirection": {
+          "Compute": "Wave_Enemy_Five_Spawn_Direction"
+        },
         "DistanceRange": {
-          "Compute": "Wave_Distance_Range"
+          "Compute": "Wave_Enemy_Five_Distance_Range"
         },
         "Kind": {
           "Compute": "Wave_Enemy_Five_Type"
         },
         "JoinFlock": true,
-        "FanOut": true,
+        "FanOut": {
+          "Compute": "Wave_Enemy_Five_Fan_Out"
+        },
         "Once": true,
         "CountRange": {
           "Compute": "Wave_Enemy_Five_Count"
