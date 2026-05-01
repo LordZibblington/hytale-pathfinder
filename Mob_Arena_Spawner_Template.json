@@ -26,14 +26,11 @@
       "Description": "Range of possible values the timer can start at."
     },
     "Wave_One_Start_Time": {
-      "Value": [
-        599,
-        600
-      ],
+      "Value": [ 999998, 999999 ],
       "Description": "Value for calculating the moment Wave 1 starts."
     },
     "Wave_One_Enemy_One_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy One in Wave One"
     },
     "Wave_One_Enemy_One_Count": {
@@ -60,7 +57,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy One of Wave One."
     },
     "Wave_One_Enemy_Two_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy One in Wave Two"
     },
     "Wave_One_Enemy_Two_Count": {
@@ -87,7 +84,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Two of Wave One."
     },
     "Wave_One_Enemy_Three_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy One in Wave Three"
     },
     "Wave_One_Enemy_Three_Count": {
@@ -114,7 +111,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Three of Wave One."
     },
     "Wave_One_Enemy_Four_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy One in Wave Four"
     },
     "Wave_One_Enemy_Four_Count": {
@@ -141,7 +138,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Four of Wave One."
     },
     "Wave_One_Enemy_Five_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy One in Wave Five"
     },
     "Wave_One_Enemy_Five_Count": {
@@ -168,14 +165,11 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Five of Wave One."
     },
     "Wave_Two_Start_Time": {
-      "Value": [
-        539,
-        540
-      ],
+      "Value": [ 999998, 999999 ],
       "Description": "Lower value for calculating the moment Wave 1 starts."
     },
     "Wave_Two_Enemy_One_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Two in Wave One"
     },
     "Wave_Two_Enemy_One_Count": {
@@ -202,7 +196,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy One of Wave Two."
     },
     "Wave_Two_Enemy_Two_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Two in Wave Two"
     },
     "Wave_Two_Enemy_Two_Count": {
@@ -229,7 +223,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Two of Wave Two."
     },
     "Wave_Two_Enemy_Three_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Two in Wave Three"
     },
     "Wave_Two_Enemy_Three_Count": {
@@ -256,7 +250,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Three of Wave Two."
     },
     "Wave_Two_Enemy_Four_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Two in Wave Four"
     },
     "Wave_Two_Enemy_Four_Count": {
@@ -283,7 +277,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Four of Wave Two."
     },
     "Wave_Two_Enemy_Five_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Two in Wave Five"
     },
     "Wave_Two_Enemy_Five_Count": {
@@ -310,14 +304,11 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Five of Wave Two."
     },
     "Wave_Three_Start_Time": {
-      "Value": [
-        479,
-        480
-      ],
+      "Value": [ 999998, 999999 ],
       "Description": "Lower value for calculating the moment Wave 1 starts."
     },
     "Wave_Three_Enemy_One_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Three in Wave One"
     },
     "Wave_Three_Enemy_One_Count": {
@@ -344,7 +335,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy One of Wave Three."
     },
     "Wave_Three_Enemy_Two_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Three in Wave Two"
     },
     "Wave_Three_Enemy_Two_Count": {
@@ -371,7 +362,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Two of Wave Three."
     },
     "Wave_Three_Enemy_Three_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Three in Wave Three"
     },
     "Wave_Three_Enemy_Three_Count": {
@@ -398,7 +389,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Three of Wave Three."
     },
     "Wave_Three_Enemy_Four_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Three in Wave Four"
     },
     "Wave_Three_Enemy_Four_Count": {
@@ -425,7 +416,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Four of Wave Three."
     },
     "Wave_Three_Enemy_Five_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Three in Wave Five"
     },
     "Wave_Three_Enemy_Five_Count": {
@@ -452,14 +443,11 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Five of Wave Three."
     },
     "Wave_Four_Start_Time": {
-      "Value": [
-        419,
-        420
-      ],
+      "Value": [ 999998, 999999 ],
       "Description": "Lower value for calculating the moment Wave 1 starts."
     },
     "Wave_Four_Enemy_One_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Four in Wave One"
     },
     "Wave_Four_Enemy_One_Count": {
@@ -486,7 +474,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy One of Wave Four."
     },
     "Wave_Four_Enemy_Two_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Four in Wave Two"
     },
     "Wave_Four_Enemy_Two_Count": {
@@ -513,7 +501,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Two of Wave Four."
     },
     "Wave_Four_Enemy_Three_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Four in Wave Three"
     },
     "Wave_Four_Enemy_Three_Count": {
@@ -540,7 +528,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Three of Wave Four."
     },
     "Wave_Four_Enemy_Four_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Four in Wave Four"
     },
     "Wave_Four_Enemy_Four_Count": {
@@ -567,7 +555,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Four of Wave Four."
     },
     "Wave_Four_Enemy_Five_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Four in Wave Five"
     },
     "Wave_Four_Enemy_Five_Count": {
@@ -594,14 +582,11 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Five of Wave Four."
     },
     "Wave_Five_Start_Time": {
-      "Value": [
-        359,
-        360
-      ],
+      "Value": [ 999998, 999999 ],
       "Description": "Lower value for calculating the moment Wave 1 starts."
     },
     "Wave_Five_Enemy_One_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Five in Wave One"
     },
     "Wave_Five_Enemy_One_Count": {
@@ -628,7 +613,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy One of Wave Five."
     },
     "Wave_Five_Enemy_Two_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Five in Wave Two"
     },
     "Wave_Five_Enemy_Two_Count": {
@@ -655,7 +640,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Two of Wave Five."
     },
     "Wave_Five_Enemy_Three_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Five in Wave Three"
     },
     "Wave_Five_Enemy_Three_Count": {
@@ -682,7 +667,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Three of Wave Five."
     },
     "Wave_Five_Enemy_Four_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Five in Wave Four"
     },
     "Wave_Five_Enemy_Four_Count": {
@@ -709,7 +694,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Four of Wave Five."
     },
     "Wave_Five_Enemy_Five_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Five in Wave Five"
     },
     "Wave_Five_Enemy_Five_Count": {
@@ -736,14 +721,11 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Five of Wave Five."
     },
     "Wave_Six_Start_Time": {
-      "Value": [
-        299,
-        300
-      ],
+      "Value": [ 999998, 999999 ],
       "Description": "Lower value for calculating the moment Wave 1 starts."
     },
     "Wave_Six_Enemy_One_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Six in Wave One"
     },
     "Wave_Six_Enemy_One_Count": {
@@ -770,7 +752,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy One of Wave Six."
     },
     "Wave_Six_Enemy_Two_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Six in Wave Two"
     },
     "Wave_Six_Enemy_Two_Count": {
@@ -797,7 +779,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Two of Wave Six."
     },
     "Wave_Six_Enemy_Three_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Six in Wave Three"
     },
     "Wave_Six_Enemy_Three_Count": {
@@ -824,7 +806,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Three of Wave Six."
     },
     "Wave_Six_Enemy_Four_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Six in Wave Four"
     },
     "Wave_Six_Enemy_Four_Count": {
@@ -851,7 +833,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Four of Wave Six."
     },
     "Wave_Six_Enemy_Five_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Six in Wave Five"
     },
     "Wave_Six_Enemy_Five_Count": {
@@ -878,14 +860,11 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy One of Wave Six."
     },
     "Wave_Seven_Start_Time": {
-      "Value": [
-        239,
-        240
-      ],
+      "Value": [ 999998, 999999 ],
       "Description": "Lower value for calculating the moment Wave 1 starts."
     },
     "Wave_Seven_Enemy_One_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Seven in Wave One"
     },
     "Wave_Seven_Enemy_One_Count": {
@@ -912,7 +891,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy One of Wave Seven."
     },
     "Wave_Seven_Enemy_Two_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Seven in Wave Two"
     },
     "Wave_Seven_Enemy_Two_Count": {
@@ -939,7 +918,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Two of Wave Seven."
     },
     "Wave_Seven_Enemy_Three_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Seven in Wave Three"
     },
     "Wave_Seven_Enemy_Three_Count": {
@@ -966,7 +945,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Three of Wave Seven."
     },
     "Wave_Seven_Enemy_Four_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Seven in Wave Four"
     },
     "Wave_Seven_Enemy_Four_Count": {
@@ -993,7 +972,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Four of Wave Seven."
     },
     "Wave_Seven_Enemy_Five_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Seven in Wave Five"
     },
     "Wave_Seven_Enemy_Five_Count": {
@@ -1020,14 +999,11 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Five of Wave Seven."
     },
     "Wave_Eight_Start_Time": {
-      "Value": [
-        179,
-        180
-      ],
+      "Value": [ 999998, 999999 ],
       "Description": "Lower value for calculating the moment Wave 1 starts."
     },
     "Wave_Eight_Enemy_One_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Eight in Wave One"
     },
     "Wave_Eight_Enemy_One_Count": {
@@ -1054,7 +1030,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy One of Wave Eight."
     },
     "Wave_Eight_Enemy_Two_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Eight in Wave Two"
     },
     "Wave_Eight_Enemy_Two_Count": {
@@ -1081,7 +1057,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Two of Wave Eight."
     },
     "Wave_Eight_Enemy_Three_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Eight in Wave Three"
     },
     "Wave_Eight_Enemy_Three_Count": {
@@ -1108,7 +1084,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Three of Wave Eight."
     },
     "Wave_Eight_Enemy_Four_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Eight in Wave Four"
     },
     "Wave_Eight_Enemy_Four_Count": {
@@ -1135,7 +1111,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Four of Wave Eight."
     },
     "Wave_Eight_Enemy_Five_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Eight in Wave Five"
     },
     "Wave_Eight_Enemy_Five_Count": {
@@ -1162,14 +1138,11 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Five of Wave Eight."
     },
     "Wave_Nine_Start_Time": {
-      "Value": [
-        119,
-        120
-      ],
+      "Value": [ 999998, 999999 ],
       "Description": "Lower value for calculating the moment Wave 1 starts."
     },
     "Wave_Nine_Enemy_One_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Nine in Wave One"
     },
     "Wave_Nine_Enemy_One_Count": {
@@ -1196,7 +1169,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy One of Wave Nine."
     },
     "Wave_Nine_Enemy_Two_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Nine in Wave Two"
     },
     "Wave_Nine_Enemy_Two_Count": {
@@ -1223,7 +1196,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Two of Wave Nine."
     },
     "Wave_Nine_Enemy_Three_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Nine in Wave Three"
     },
     "Wave_Nine_Enemy_Three_Count": {
@@ -1250,7 +1223,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Three of Wave Nine."
     },
     "Wave_Nine_Enemy_Four_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Nine in Wave Four"
     },
     "Wave_Nine_Enemy_Four_Count": {
@@ -1277,7 +1250,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Four of Wave Nine."
     },
     "Wave_Nine_Enemy_Five_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Nine in Wave Five"
     },
     "Wave_Nine_Enemy_Five_Count": {
@@ -1304,14 +1277,11 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Five of Wave Nine."
     },
     "Wave_Ten_Start_Time": {
-      "Value": [
-        59,
-        60
-      ],
+      "Value": [ 999998, 999999 ],
       "Description": "Lower value for calculating the moment Wave 1 starts."
     },
     "Wave_Ten_Enemy_One_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Ten in Wave One"
     },
     "Wave_Ten_Enemy_One_Count": {
@@ -1338,7 +1308,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy One of Wave Ten."
     },
     "Wave_Ten_Enemy_Two_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Ten in Wave Two"
     },
     "Wave_Ten_Enemy_Two_Count": {
@@ -1365,7 +1335,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Two of Wave Ten."
     },
     "Wave_Ten_Enemy_Three_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Ten in Wave Three"
     },
     "Wave_Ten_Enemy_Three_Count": {
@@ -1392,7 +1362,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Three of Wave Ten."
     },
     "Wave_Ten_Enemy_Four_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Ten in Wave Four"
     },
     "Wave_Ten_Enemy_Four_Count": {
@@ -1419,7 +1389,7 @@
       "Description": "The minimum and maximum distance from the spawner to spawn Enemy Four of Wave Ten."
     },
     "Wave_Ten_Enemy_Five_Type": {
-      "Value": "Scarak_Fighter",
+      "Value": "NULL",
       "Description": "The quantity of Enemy Ten in Wave Five"
     },
     "Wave_Ten_Enemy_Five_Count": {
