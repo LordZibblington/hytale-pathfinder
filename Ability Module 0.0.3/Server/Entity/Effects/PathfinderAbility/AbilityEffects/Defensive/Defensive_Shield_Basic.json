@@ -1,0 +1,16 @@
+{
+  "Duration": 2,
+  "Invulnerable": true,
+  "ApplicationEffects": {
+    "EntityBottomTint": "#6CD9EF",
+    "EntityTopTint": "#0E0E5E",
+    "ScreenEffect": "ScreenEffects/Defensive_Shield_Basic.png",
+    "Particles": [
+      {
+        "SystemId": "Defensive_Shield_Basic",
+        "TargetEntityPart": "Entity",
+        "TargetNodeName": "Pelvis"
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Weapon_Ability_Item.name",
+    "Description": "server.items.Weapon_Ability_Item.description"
+  },
+  "Categories": [
+    "Items.AbilityItem"
+  ],
+  "Model": "Items/Weapons/Spellbook/Grimoire.blockymodel",
+  "Texture": "Items/Weapons/Spellbook/Grimoire_Brown_Texture.png",
+  "Quality": "Legendary",
+  "ItemLevel": 10,
+  "PlayerAnimationsId": "Item",
+  "IconProperties": {
+    "Scale": 0.6,
+    "Translation": [
+      0,
+      -6
+    ],
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Weapon_Spellbook_Grimoire_Brown.png",
+  "Tags": {
+    "Type": [
+      "Weapon"
+    ]
+  },
+  "ItemEntity": {
+    "ParticleSystemId": null
+  },
+  "ItemSoundSetId": "ISS_Weapons_Books",
+  "DropOnDeath": true,
+  "Interactions": {
+    "Ability1": "Offensive_Ability1_Root",
+    "Ability2": "Defensive_Ability2_Root",
+    "Ability3": "Mobility_Ability3_Root"
+  },
+  "MaxStack": 1
+}

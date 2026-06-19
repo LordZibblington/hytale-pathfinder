@@ -1,0 +1,28 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "Offensive_Ability1_Cooldown": 100
+  },
+  "ValueType": "Percent",
+  "Next": {
+    "Type": "Serial",
+    "Interactions": [
+      {
+        "Type": "ChangeStat",
+        "Behaviour": "Set",
+        "StatModifiers": {
+          "Offensive_Ability1_Cooldown": -100
+        },
+        "ValueType": "Absolute"
+      },
+      {
+        "Type": "ApplyEffect",
+        "EffectId": "Offensive_Ability1_Timer"
+      },
+      {
+        "Type": "Projectile",
+        "Config": "Projectile_Config_Offensive_Fireball"
+      }
+    ]
+  }
+}

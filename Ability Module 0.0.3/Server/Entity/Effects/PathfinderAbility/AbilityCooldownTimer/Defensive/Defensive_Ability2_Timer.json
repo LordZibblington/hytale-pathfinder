@@ -1,0 +1,10 @@
+{
+  "StatModifiers": {
+    "Defensive_Ability2_Cooldown": 10
+  },
+  "ValueType": "Percent",
+  "DamageCalculatorCooldown": 1,
+  "Duration": 10.05,
+  "OverlapBehavior": "Overwrite",
+  "StatusEffectIcon": "Icons/ItemsGenerated/Cloth_Blue.png"
+}

@@ -1,0 +1,10 @@
+{
+  "StatModifiers": {
+    "Offensive_Ability1_Cooldown": 50
+  },
+  "ValueType": "Percent",
+  "DamageCalculatorCooldown": 0.25,
+  "Duration": 0.55,
+  "OverlapBehavior": "Overwrite",
+  "StatusEffectIcon": "Icons/ItemsGenerated/Cloth_Red.png"
+}

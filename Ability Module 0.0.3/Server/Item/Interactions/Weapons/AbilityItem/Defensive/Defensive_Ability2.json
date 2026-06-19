@@ -1,0 +1,28 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "Defensive_Ability2_Cooldown": 100
+  },
+  "ValueType": "Percent",
+  "Next": {
+    "Type": "Serial",
+    "Interactions": [
+      {
+        "Type": "ChangeStat",
+        "Behaviour": "Set",
+        "StatModifiers": {
+          "Defensive_Ability2_Cooldown": -100
+        },
+        "ValueType": "Absolute"
+      },
+      {
+        "Type": "ApplyEffect",
+        "EffectId": "Defensive_Ability2_Timer"
+      },
+      {
+        "Type": "ApplyEffect",
+        "EffectId": "Defensive_Shield_Basic"
+      }
+    ]
+  }
+}

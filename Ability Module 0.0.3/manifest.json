@@ -1,0 +1,15 @@
+{
+  "Group": "Project_Pathfinder",
+  "Name": "PF_Ability Module",
+  "Version": "0.0.3",
+  "Description": "Project Pathfinder Ability Module v0.0.3",
+  "Authors": [],
+  "Website": "",
+  "ServerVersion": ">=0.5.4 <0.6.0",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "LoadBefore": {},
+  "DisabledByDefault": false,
+  "IncludesAssetPack": false,
+  "SubPlugins": []
+}
